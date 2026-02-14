@@ -1,4 +1,4 @@
-# Read https://github.com/michaelmross/tasktracker/blob/collatz/spike_certify_readme.md
+# Read https://github.com/michaelmross/tasktracker/README.md
 
 import math
 import itertools
@@ -324,3 +324,4 @@ def main():
 if __name__ == "__main__":
     mp.freeze_support()
     main()
+
