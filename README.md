@@ -80,14 +80,6 @@ The code includes internal consistency checks:
 - `worker()`: Parallel worker function for multi-core execution
 - `precompute_*()`: Optimization tables for modular arithmetic
 
-## Theoretical Justification
-
-This computational search complements Theorem 12.6 in the paper, which proves that no bounded-exponent R=2 cycles can exist. The computation:
-
-1. Verifies the theorem's predictions for concrete parameter ranges
-2. Demonstrates the effectiveness of the structural constraints (no 1→2 transitions, run structures)
-3. Provides empirical confidence in the theoretical framework
-
 ## Citation
 
 If you use or modify this code, please cite:
