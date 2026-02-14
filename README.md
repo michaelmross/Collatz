@@ -96,7 +96,7 @@ Michael M. Ross, "Modular Spike Structures and Finite-State Exclusion of Bounded
 
 ## Contact
 
-[Your email/contact information]
+michaelmross@gmail.com
 
 ## License
 
