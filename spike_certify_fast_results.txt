@@ -1,0 +1,458 @@
+R=2 Collatz cycle search  L∈[50,200]  Amax=20  b∈[1, 2, 3]  workers=8
+
+L= 50 b=1  cands=          18  t=  0.34s          54/s  total=0s
+L= 50 b=2  cands=      15,876  t=  0.03s     497,273/s  total=0s
+L= 50 b=3  cands=   6,759,648  t=  0.48s  14,126,602/s  total=1s
+L= 51 b=1  cands=          18  t=  0.00s       7,179/s  total=1s
+L= 51 b=2  cands=      16,200  t=  0.01s   1,122,843/s  total=1s
+L= 51 b=3  cands=   7,075,600  t=  0.50s  14,240,419/s  total=1s
+L= 52 b=1  cands=          18  t=  0.00s       7,225/s  total=1s
+L= 52 b=2  cands=      16,524  t=  0.01s   1,102,346/s  total=1s
+L= 52 b=3  cands=   7,391,175  t=  0.52s  14,136,944/s  total=2s
+L= 53 b=1  cands=          18  t=  0.00s       6,740/s  total=2s
+L= 53 b=2  cands=      16,848  t=  0.02s   1,100,659/s  total=2s
+L= 53 b=3  cands=   7,706,712  t=  0.57s  13,542,590/s  total=3s
+L= 54 b=1  cands=          18  t=  0.00s       6,764/s  total=3s
+L= 54 b=2  cands=      17,172  t=  0.02s   1,070,122/s  total=3s
+L= 54 b=3  cands=   8,022,716  t=  0.62s  12,925,592/s  total=3s
+L= 55 b=1  cands=          18  t=  0.00s       7,064/s  total=3s
+L= 55 b=2  cands=      17,496  t=  0.01s   1,175,077/s  total=3s
+L= 55 b=3  cands=   8,339,868  t=  0.62s  13,409,017/s  total=4s
+L= 56 b=1  cands=          18  t=  0.00s       6,981/s  total=4s
+L= 56 b=2  cands=      17,820  t=  0.01s   1,210,424/s  total=4s
+L= 56 b=3  cands=   8,659,035  t=  0.65s  13,379,593/s  total=5s
+L= 57 b=1  cands=          18  t=  0.00s       6,817/s  total=5s
+L= 57 b=2  cands=      18,144  t=  0.02s   1,145,244/s  total=5s
+L= 57 b=3  cands=   8,981,280  t=  0.68s  13,181,817/s  total=5s
+L= 58 b=1  cands=          18  t=  0.00s       6,167/s  total=5s
+L= 58 b=2  cands=      18,468  t=  0.02s   1,226,435/s  total=5s
+L= 58 b=3  cands=   9,307,872  t=  0.75s  12,360,731/s  total=6s
+L= 59 b=1  cands=          18  t=  0.00s       6,777/s  total=6s
+L= 59 b=2  cands=      18,792  t=  0.02s   1,178,061/s  total=6s
+L= 59 b=3  cands=   9,640,296  t=  0.99s   9,707,356/s  total=7s
+L= 60 b=1  cands=          18  t=  0.00s       3,714/s  total=7s
+L= 60 b=2  cands=      19,116  t=  0.03s     662,757/s  total=7s
+L= 60 b=3  cands=   9,978,552  t=  1.23s   8,139,131/s  total=8s
+L= 61 b=1  cands=          18  t=  0.00s       3,745/s  total=8s
+L= 61 b=2  cands=      19,440  t=  0.03s     667,021/s  total=8s
+L= 61 b=3  cands=  10,322,640  t=  1.25s   8,277,455/s  total=10s
+L= 62 b=1  cands=          18  t=  0.00s       3,776/s  total=10s
+L= 62 b=2  cands=      19,764  t=  0.03s     676,295/s  total=10s
+L= 62 b=3  cands=  10,672,560  t=  1.28s   8,306,907/s  total=11s
+L= 63 b=1  cands=          18  t=  0.01s       3,212/s  total=11s
+L= 63 b=2  cands=      20,088  t=  0.03s     633,141/s  total=11s
+L= 63 b=3  cands=  11,028,312  t=  1.29s   8,548,504/s  total=12s
+L= 64 b=1  cands=          18  t=  0.00s       3,700/s  total=12s
+L= 64 b=2  cands=      20,412  t=  0.03s     648,297/s  total=12s
+L= 64 b=3  cands=  11,389,896  t=  1.30s   8,755,246/s  total=14s
+L= 65 b=1  cands=          18  t=  0.01s       2,835/s  total=14s
+L= 65 b=2  cands=      20,736  t=  0.04s     589,820/s  total=14s
+L= 65 b=3  cands=  11,757,312  t=  1.42s   8,294,719/s  total=15s
+L= 66 b=1  cands=          18  t=  0.01s       3,180/s  total=15s
+L= 66 b=2  cands=      21,060  t=  0.03s     657,668/s  total=15s
+L= 66 b=3  cands=  12,130,560  t=  1.50s   8,068,542/s  total=17s
+L= 67 b=1  cands=          18  t=  0.01s       2,807/s  total=17s
+L= 67 b=2  cands=      21,384  t=  0.03s     621,008/s  total=17s
+L= 67 b=3  cands=  12,509,640  t=  1.48s   8,462,111/s  total=18s
+L= 68 b=1  cands=          18  t=  0.01s       2,118/s  total=18s
+L= 68 b=2  cands=      21,708  t=  0.05s     405,176/s  total=18s
+L= 68 b=3  cands=  12,894,552  t=  1.55s   8,345,575/s  total=20s
+L= 69 b=1  cands=          18  t=  0.01s       2,114/s  total=20s
+L= 69 b=2  cands=      22,032  t=  0.05s     487,060/s  total=20s
+L= 69 b=3  cands=  13,285,296  t=  1.61s   8,254,353/s  total=21s
+L= 70 b=1  cands=          18  t=  0.01s       3,049/s  total=21s
+L= 70 b=2  cands=      22,356  t=  0.04s     613,331/s  total=21s
+L= 70 b=3  cands=  13,681,872  t=  1.67s   8,172,119/s  total=23s
+L= 71 b=1  cands=          18  t=  0.01s       2,946/s  total=23s
+L= 71 b=2  cands=      22,680  t=  0.03s     682,226/s  total=23s
+L= 71 b=3  cands=  14,084,280  t=  1.73s   8,160,208/s  total=25s
+L= 72 b=1  cands=          18  t=  0.01s       2,667/s  total=25s
+L= 72 b=2  cands=      23,004  t=  0.03s     675,382/s  total=25s
+L= 72 b=3  cands=  14,492,520  t=  1.80s   8,070,157/s  total=27s
+L= 73 b=1  cands=          18  t=  0.01s       3,117/s  total=27s
+L= 73 b=2  cands=      23,328  t=  0.03s     722,155/s  total=27s
+L= 73 b=3  cands=  14,906,592  t=  1.70s   8,766,317/s  total=28s
+L= 74 b=1  cands=          18  t=  0.01s       3,114/s  total=28s
+L= 74 b=2  cands=      23,652  t=  0.04s     668,606/s  total=28s
+L= 74 b=3  cands=  15,326,496  t=  1.71s   8,987,188/s  total=30s
+L= 75 b=1  cands=          18  t=  0.01s       2,734/s  total=30s
+L= 75 b=2  cands=      23,976  t=  0.03s     687,194/s  total=30s
+L= 75 b=3  cands=  15,752,232  t=  1.83s   8,589,507/s  total=32s
+L= 76 b=1  cands=          18  t=  0.01s       3,217/s  total=32s
+L= 76 b=2  cands=      24,300  t=  0.03s     777,191/s  total=32s
+L= 76 b=3  cands=  16,183,800  t=  1.90s   8,531,840/s  total=34s
+L= 77 b=1  cands=          18  t=  0.01s       2,587/s  total=34s
+L= 77 b=2  cands=      24,624  t=  0.05s     465,190/s  total=34s
+L= 77 b=3  cands=  16,621,200  t=  1.90s   8,731,185/s  total=36s
+L= 78 b=1  cands=          18  t=  0.01s       2,624/s  total=36s
+L= 78 b=2  cands=      24,948  t=  0.04s     597,326/s  total=36s
+L= 78 b=3  cands=  17,064,432  t=  2.17s   7,868,379/s  total=38s
+L= 79 b=1  cands=          18  t=  0.01s       3,112/s  total=38s
+L= 79 b=2  cands=      25,272  t=  0.03s     744,622/s  total=38s
+L= 79 b=3  cands=  17,513,496  t=  1.97s   8,894,162/s  total=40s
+L= 80 b=1  cands=          18  t=  0.01s       2,837/s  total=40s
+L= 80 b=2  cands=      25,596  t=  0.04s     697,361/s  total=40s
+L= 80 b=3  cands=  17,968,392  t=  2.05s   8,774,671/s  total=42s
+L= 81 b=1  cands=          18  t=  0.01s       3,016/s  total=42s
+L= 81 b=2  cands=      25,920  t=  0.05s     558,296/s  total=42s
+L= 81 b=3  cands=  18,429,120  t=  2.07s   8,907,470/s  total=44s
+L= 82 b=1  cands=          18  t=  0.01s       2,744/s  total=44s
+L= 82 b=2  cands=      26,244  t=  0.04s     682,176/s  total=44s
+L= 82 b=3  cands=  18,895,680  t=  2.23s   8,470,188/s  total=47s
+L= 83 b=1  cands=          18  t=  0.01s       2,954/s  total=47s
+L= 83 b=2  cands=      26,568  t=  0.03s     797,007/s  total=47s
+L= 83 b=3  cands=  19,368,072  t=  2.20s   8,820,550/s  total=49s
+L= 84 b=1  cands=          18  t=  0.01s       2,668/s  total=49s
+L= 84 b=2  cands=      26,892  t=  0.04s     764,389/s  total=49s
+L= 84 b=3  cands=  19,846,296  t=  2.25s   8,827,693/s  total=51s
+L= 85 b=1  cands=          18  t=  0.01s       3,235/s  total=51s
+L= 85 b=2  cands=      27,216  t=  0.03s     823,258/s  total=51s
+L= 85 b=3  cands=  20,330,352  t=  2.25s   9,017,781/s  total=53s
+L= 86 b=1  cands=          18  t=  0.01s       2,832/s  total=53s
+L= 86 b=2  cands=      27,540  t=  0.04s     694,374/s  total=54s
+L= 86 b=3  cands=  20,820,240  t=  2.46s   8,469,450/s  total=56s
+L= 87 b=1  cands=          18  t=  0.01s       3,093/s  total=56s
+L= 87 b=2  cands=      27,864  t=  0.03s     829,366/s  total=56s
+L= 87 b=3  cands=  21,315,960  t=  2.35s   9,074,094/s  total=58s
+L= 88 b=1  cands=          18  t=  0.01s       1,227/s  total=58s
+L= 88 b=2  cands=      28,188  t=  0.07s     384,222/s  total=58s
+L= 88 b=3  cands=  21,817,512  t=  2.71s   8,037,412/s  total=61s
+L= 89 b=1  cands=          18  t=  0.01s       1,873/s  total=61s
+L= 89 b=2  cands=      28,512  t=  0.06s     508,543/s  total=61s
+L= 89 b=3  cands=  22,324,896  t=  2.65s   8,411,671/s  total=64s
+L= 90 b=1  cands=          18  t=  0.01s       3,147/s  total=64s
+L= 90 b=2  cands=      28,836  t=  0.04s     736,570/s  total=64s
+L= 90 b=3  cands=  22,838,112  t=  2.70s   8,449,301/s  total=67s
+L= 91 b=1  cands=          18  t=  0.01s       3,432/s  total=67s
+L= 91 b=2  cands=      29,160  t=  0.03s     931,067/s  total=67s
+L= 91 b=3  cands=  23,357,160  t=  2.59s   9,007,592/s  total=69s
+L= 92 b=1  cands=          18  t=  0.01s       2,914/s  total=69s
+L= 92 b=2  cands=      29,484  t=  0.04s     803,598/s  total=69s
+L= 92 b=3  cands=  23,882,040  t=  2.79s   8,560,784/s  total=72s
+L= 93 b=1  cands=          18  t=  0.01s       3,072/s  total=72s
+L= 93 b=2  cands=      29,808  t=  0.03s     904,469/s  total=72s
+L= 93 b=3  cands=  24,412,752  t=  2.73s   8,950,680/s  total=75s
+L= 94 b=1  cands=          18  t=  0.01s       2,579/s  total=75s
+L= 94 b=2  cands=      30,132  t=  0.04s     796,087/s  total=75s
+L= 94 b=3  cands=  24,949,296  t=  2.80s   8,926,339/s  total=78s
+L= 95 b=1  cands=          18  t=  0.01s       2,803/s  total=78s
+L= 95 b=2  cands=      30,456  t=  0.04s     731,734/s  total=78s
+L= 95 b=3  cands=  25,491,672  t=  2.96s   8,626,104/s  total=81s
+L= 96 b=1  cands=          18  t=  0.01s       2,465/s  total=81s
+L= 96 b=2  cands=      30,780  t=  0.04s     802,540/s  total=81s
+L= 96 b=3  cands=  26,039,880  t=  3.08s   8,445,965/s  total=84s
+L= 97 b=1  cands=          18  t=  0.01s       3,017/s  total=84s
+L= 97 b=2  cands=      31,104  t=  0.03s     901,070/s  total=84s
+L= 97 b=3  cands=  26,593,920  t=  3.12s   8,514,491/s  total=87s
+L= 98 b=1  cands=          18  t=  0.01s       1,701/s  total=87s
+L= 98 b=2  cands=      31,428  t=  0.05s     589,980/s  total=87s
+L= 98 b=3  cands=  27,153,792  t=  3.47s   7,833,984/s  total=91s
+L= 99 b=1  cands=          18  t=  0.01s       3,528/s  total=91s
+L= 99 b=2  cands=      31,752  t=  0.03s     988,360/s  total=91s
+L= 99 b=3  cands=  27,719,496  t=  3.21s   8,642,737/s  total=94s
+L=100 b=1  cands=          18  t=  0.01s       2,608/s  total=94s
+L=100 b=2  cands=      32,076  t=  0.04s     864,753/s  total=94s
+L=100 b=3  cands=  28,291,032  t=  3.42s   8,261,266/s  total=97s
+L=101 b=1  cands=          18  t=  0.01s       2,982/s  total=97s
+L=101 b=2  cands=      32,400  t=  0.04s     819,877/s  total=97s
+L=101 b=3  cands=  28,868,400  t=  3.41s   8,465,489/s  total=101s
+L=102 b=1  cands=          18  t=  0.01s       2,885/s  total=101s
+L=102 b=2  cands=      32,724  t=  0.04s     892,091/s  total=101s
+L=102 b=3  cands=  29,451,600  t=  3.44s   8,566,882/s  total=104s
+L=103 b=1  cands=          18  t=  0.01s       2,688/s  total=104s
+L=103 b=2  cands=      33,048  t=  0.04s     898,902/s  total=104s
+L=103 b=3  cands=  30,040,632  t=  3.60s   8,346,148/s  total=108s
+L=104 b=1  cands=          18  t=  0.01s       3,535/s  total=108s
+L=104 b=2  cands=      33,372  t=  0.04s     927,006/s  total=108s
+L=104 b=3  cands=  30,635,496  t=  3.58s   8,546,962/s  total=111s
+L=105 b=1  cands=          18  t=  0.01s       2,462/s  total=111s
+L=105 b=2  cands=      33,696  t=  0.04s     827,723/s  total=112s
+L=105 b=3  cands=  31,236,192  t=  3.82s   8,179,831/s  total=115s
+L=106 b=1  cands=          18  t=  0.01s       3,144/s  total=115s
+L=106 b=2  cands=      34,020  t=  0.04s     850,922/s  total=115s
+L=106 b=3  cands=  31,842,720  t=  3.94s   8,083,687/s  total=119s
+L=107 b=1  cands=          18  t=  0.01s       2,936/s  total=119s
+L=107 b=2  cands=      34,344  t=  0.04s     894,549/s  total=119s
+L=107 b=3  cands=  32,455,080  t=  4.04s   8,041,152/s  total=123s
+L=108 b=1  cands=          18  t=  0.01s       2,569/s  total=123s
+L=108 b=2  cands=      34,668  t=  0.05s     748,658/s  total=123s
+L=108 b=3  cands=  33,073,272  t=  4.00s   8,271,955/s  total=127s
+L=109 b=1  cands=          18  t=  0.01s       2,668/s  total=127s
+L=109 b=2  cands=      34,992  t=  0.03s   1,004,972/s  total=128s
+L=109 b=3  cands=  33,697,296  t=  3.91s   8,627,228/s  total=131s
+L=110 b=1  cands=          18  t=  0.01s       3,333/s  total=131s
+L=110 b=2  cands=      35,316  t=  0.04s     891,327/s  total=131s
+L=110 b=3  cands=  34,327,152  t=  4.24s   8,086,964/s  total=136s
+L=111 b=1  cands=          18  t=  0.01s       2,391/s  total=136s
+L=111 b=2  cands=      35,640  t=  0.05s     768,964/s  total=136s
+L=111 b=3  cands=  34,962,840  t=  4.07s   8,585,688/s  total=140s
+L=112 b=1  cands=          18  t=  0.01s       2,572/s  total=140s
+L=112 b=2  cands=      35,964  t=  0.04s     916,160/s  total=140s
+L=112 b=3  cands=  35,604,360  t=  4.05s   8,790,790/s  total=144s
+L=113 b=1  cands=          18  t=  0.01s       2,417/s  total=144s
+L=113 b=2  cands=      36,288  t=  0.04s     897,269/s  total=144s
+L=113 b=3  cands=  36,251,712  t=  4.38s   8,285,483/s  total=148s
+L=114 b=1  cands=          18  t=  0.01s       2,788/s  total=148s
+L=114 b=2  cands=      36,612  t=  0.04s     889,147/s  total=148s
+L=114 b=3  cands=  36,904,896  t=  4.69s   7,871,386/s  total=153s
+L=115 b=1  cands=          18  t=  0.01s       3,118/s  total=153s
+L=115 b=2  cands=      36,936  t=  0.04s     944,823/s  total=153s
+L=115 b=3  cands=  37,563,912  t=  4.53s   8,296,045/s  total=158s
+L=116 b=1  cands=          18  t=  0.01s       3,086/s  total=158s
+L=116 b=2  cands=      37,260  t=  0.04s     940,074/s  total=158s
+L=116 b=3  cands=  38,228,760  t=  4.91s   7,792,767/s  total=163s
+L=117 b=1  cands=          18  t=  0.01s       2,911/s  total=163s
+L=117 b=2  cands=      37,584  t=  0.04s     858,790/s  total=163s
+L=117 b=3  cands=  38,899,440  t=  4.80s   8,112,022/s  total=167s
+L=118 b=1  cands=          18  t=  0.01s       2,670/s  total=167s
+L=118 b=2  cands=      37,908  t=  0.04s     980,644/s  total=168s
+L=118 b=3  cands=  39,575,952  t=  4.92s   8,049,181/s  total=172s
+L=119 b=1  cands=          18  t=  0.01s       2,506/s  total=172s
+L=119 b=2  cands=      38,232  t=  0.05s     796,245/s  total=172s
+L=119 b=3  cands=  40,258,296  t=  4.88s   8,246,978/s  total=177s
+L=120 b=1  cands=          18  t=  0.01s       2,567/s  total=177s
+L=120 b=2  cands=      38,556  t=  0.05s     768,537/s  total=177s
+L=120 b=3  cands=  40,946,472  t=  5.30s   7,726,273/s  total=183s
+L=121 b=1  cands=          18  t=  0.01s       2,617/s  total=183s
+L=121 b=2  cands=      38,880  t=  0.04s   1,050,203/s  total=183s
+L=121 b=3  cands=  41,640,480  t=  5.31s   7,840,326/s  total=188s
+L=122 b=1  cands=          18  t=  0.01s       2,449/s  total=188s
+L=122 b=2  cands=      39,204  t=  0.05s     756,903/s  total=188s
+L=122 b=3  cands=  42,340,320  t=  5.09s   8,324,032/s  total=193s
+L=123 b=1  cands=          18  t=  0.01s       1,904/s  total=193s
+L=123 b=2  cands=      39,528  t=  0.06s     680,023/s  total=193s
+L=123 b=3  cands=  43,045,992  t=  5.23s   8,224,779/s  total=199s
+L=124 b=1  cands=          18  t=  0.01s       2,046/s  total=199s
+L=124 b=2  cands=      39,852  t=  0.06s     637,552/s  total=199s
+L=124 b=3  cands=  43,757,496  t=  5.38s   8,139,997/s  total=204s
+L=125 b=1  cands=          18  t=  0.01s       2,329/s  total=204s
+L=125 b=2  cands=      40,176  t=  0.05s     818,111/s  total=204s
+L=125 b=3  cands=  44,474,832  t=  5.28s   8,421,876/s  total=209s
+L=126 b=1  cands=          18  t=  0.01s       2,124/s  total=209s
+L=126 b=2  cands=      40,500  t=  0.05s     786,188/s  total=209s
+L=126 b=3  cands=  45,198,000  t=  5.31s   8,514,271/s  total=215s
+L=127 b=1  cands=          18  t=  0.01s       2,672/s  total=215s
+L=127 b=2  cands=      40,824  t=  0.05s     874,761/s  total=215s
+L=127 b=3  cands=  45,927,000  t=  5.28s   8,694,684/s  total=220s
+L=128 b=1  cands=          18  t=  0.01s       2,282/s  total=220s
+L=128 b=2  cands=      41,148  t=  0.05s     875,744/s  total=220s
+L=128 b=3  cands=  46,661,832  t=  5.60s   8,326,286/s  total=226s
+L=129 b=1  cands=          18  t=  0.01s       3,164/s  total=226s
+L=129 b=2  cands=      41,472  t=  0.04s   1,176,329/s  total=226s
+L=129 b=3  cands=  47,402,496  t=  5.65s   8,393,671/s  total=231s
+L=130 b=1  cands=          18  t=  0.01s       2,941/s  total=231s
+L=130 b=2  cands=      41,796  t=  0.04s     988,241/s  total=231s
+L=130 b=3  cands=  48,148,992  t=  5.81s   8,280,148/s  total=237s
+L=131 b=1  cands=          18  t=  0.02s       1,131/s  total=237s
+L=131 b=2  cands=      42,120  t=  0.08s     519,817/s  total=237s
+L=131 b=3  cands=  48,901,320  t=  6.61s   7,395,692/s  total=244s
+L=132 b=1  cands=          18  t=  0.01s       1,536/s  total=244s
+L=132 b=2  cands=      42,444  t=  0.06s     770,743/s  total=244s
+L=132 b=3  cands=  49,659,480  t=  6.08s   8,168,413/s  total=250s
+L=133 b=1  cands=          18  t=  0.01s       3,118/s  total=250s
+L=133 b=2  cands=      42,768  t=  0.06s     765,902/s  total=250s
+L=133 b=3  cands=  50,423,472  t=  7.93s   6,360,579/s  total=258s
+L=134 b=1  cands=          18  t=  0.01s       3,222/s  total=258s
+L=134 b=2  cands=      43,092  t=  0.04s   1,144,249/s  total=258s
+L=134 b=3  cands=  51,193,296  t=  6.07s   8,437,725/s  total=264s
+L=135 b=1  cands=          18  t=  0.01s       2,892/s  total=264s
+L=135 b=2  cands=      43,416  t=  0.04s   1,016,319/s  total=264s
+L=135 b=3  cands=  51,968,952  t=  6.61s   7,856,274/s  total=271s
+L=136 b=1  cands=          18  t=  0.01s       2,882/s  total=271s
+L=136 b=2  cands=      43,740  t=  0.04s     992,974/s  total=271s
+L=136 b=3  cands=  52,750,440  t=  6.10s   8,645,442/s  total=277s
+L=137 b=1  cands=          18  t=  0.01s       2,564/s  total=277s
+L=137 b=2  cands=      44,064  t=  0.05s     940,903/s  total=277s
+L=137 b=3  cands=  53,537,760  t=  7.05s   7,591,940/s  total=284s
+L=138 b=1  cands=          18  t=  0.01s       2,084/s  total=284s
+L=138 b=2  cands=      44,388  t=  0.05s     922,663/s  total=284s
+L=138 b=3  cands=  54,330,912  t=  7.21s   7,540,293/s  total=291s
+L=139 b=1  cands=          18  t=  0.01s       2,817/s  total=291s
+L=139 b=2  cands=      44,712  t=  0.04s   1,086,024/s  total=291s
+L=139 b=3  cands=  55,129,896  t=  6.76s   8,151,812/s  total=298s
+L=140 b=1  cands=          18  t=  0.01s       1,549/s  total=298s
+L=140 b=2  cands=      45,036  t=  0.06s     798,560/s  total=298s
+L=140 b=3  cands=  55,934,712  t=  7.07s   7,912,105/s  total=305s
+L=141 b=1  cands=          18  t=  0.01s       1,415/s  total=305s
+L=141 b=2  cands=      45,360  t=  0.06s     774,724/s  total=305s
+L=141 b=3  cands=  56,745,360  t=  7.03s   8,066,281/s  total=312s
+L=142 b=1  cands=          18  t=  0.01s       2,177/s  total=312s
+L=142 b=2  cands=      45,684  t=  0.07s     667,082/s  total=313s
+L=142 b=3  cands=  57,561,840  t=  7.32s   7,861,570/s  total=320s
+L=143 b=1  cands=          18  t=  0.01s       2,573/s  total=320s
+L=143 b=2  cands=      46,008  t=  0.04s   1,079,924/s  total=320s
+L=143 b=3  cands=  58,384,152  t=  7.01s   8,330,340/s  total=327s
+L=144 b=1  cands=          18  t=  0.01s       2,640/s  total=327s
+L=144 b=2  cands=      46,332  t=  0.05s     946,476/s  total=327s
+L=144 b=3  cands=  59,212,296  t=  7.14s   8,298,378/s  total=334s
+L=145 b=1  cands=          18  t=  0.01s       2,353/s  total=334s
+L=145 b=2  cands=      46,656  t=  0.04s   1,088,397/s  total=334s
+L=145 b=3  cands=  60,046,272  t=  7.44s   8,067,629/s  total=342s
+L=146 b=1  cands=          18  t=  0.01s       3,103/s  total=342s
+L=146 b=2  cands=      46,980  t=  0.04s   1,119,116/s  total=342s
+L=146 b=3  cands=  60,886,080  t=  7.24s   8,415,227/s  total=349s
+L=147 b=1  cands=          18  t=  0.01s       2,762/s  total=349s
+L=147 b=2  cands=      47,304  t=  0.05s     996,892/s  total=349s
+L=147 b=3  cands=  61,731,720  t=  7.37s   8,372,425/s  total=356s
+L=148 b=1  cands=          18  t=  0.02s       1,190/s  total=356s
+L=148 b=2  cands=      47,628  t=  0.06s     795,628/s  total=356s
+L=148 b=3  cands=  62,583,192  t=  7.87s   7,953,694/s  total=364s
+L=149 b=1  cands=          18  t=  0.01s       2,057/s  total=364s
+L=149 b=2  cands=      47,952  t=  0.05s     941,219/s  total=364s
+L=149 b=3  cands=  63,440,496  t=  7.90s   8,032,651/s  total=372s
+L=150 b=1  cands=          18  t=  0.01s       2,568/s  total=372s
+L=150 b=2  cands=      48,276  t=  0.04s   1,098,327/s  total=372s
+L=150 b=3  cands=  64,303,632  t=  8.12s   7,920,391/s  total=380s
+L=151 b=1  cands=          18  t=  0.01s       2,402/s  total=380s
+L=151 b=2  cands=      48,600  t=  0.04s   1,154,108/s  total=380s
+L=151 b=3  cands=  65,172,600  t=  7.87s   8,284,565/s  total=388s
+L=152 b=1  cands=          18  t=  0.01s       2,831/s  total=388s
+L=152 b=2  cands=      48,924  t=  0.06s     802,053/s  total=388s
+L=152 b=3  cands=  66,047,400  t=  8.18s   8,070,334/s  total=397s
+L=153 b=1  cands=          18  t=  0.01s       2,476/s  total=397s
+L=153 b=2  cands=      49,248  t=  0.04s   1,099,027/s  total=397s
+L=153 b=3  cands=  66,928,032  t=  9.20s   7,271,339/s  total=406s
+L=154 b=1  cands=          18  t=  0.01s       1,915/s  total=406s
+L=154 b=2  cands=      49,572  t=  0.05s   1,005,761/s  total=406s
+L=154 b=3  cands=  67,814,496  t=  8.21s   8,264,416/s  total=414s
+L=155 b=1  cands=          18  t=  0.01s       1,834/s  total=414s
+L=155 b=2  cands=      49,896  t=  0.05s     934,114/s  total=414s
+L=155 b=3  cands=  68,706,792  t=  8.96s   7,670,837/s  total=423s
+L=156 b=1  cands=          18  t=  0.01s       3,131/s  total=423s
+L=156 b=2  cands=      50,220  t=  0.04s   1,298,231/s  total=423s
+L=156 b=3  cands=  69,604,920  t=  8.34s   8,344,848/s  total=431s
+L=157 b=1  cands=          18  t=  0.01s       2,945/s  total=432s
+L=157 b=2  cands=      50,544  t=  0.04s   1,217,079/s  total=432s
+L=157 b=3  cands=  70,508,880  t=  8.62s   8,183,256/s  total=440s
+L=158 b=1  cands=          18  t=  0.01s       2,259/s  total=440s
+L=158 b=2  cands=      50,868  t=  0.05s   1,100,930/s  total=440s
+L=158 b=3  cands=  71,418,672  t=  8.19s   8,721,846/s  total=448s
+L=159 b=1  cands=          18  t=  0.01s       2,481/s  total=448s
+L=159 b=2  cands=      51,192  t=  0.05s     946,752/s  total=448s
+L=159 b=3  cands=  72,334,296  t=  9.06s   7,982,731/s  total=458s
+L=160 b=1  cands=          18  t=  0.01s       2,698/s  total=458s
+L=160 b=2  cands=      51,516  t=  0.04s   1,280,718/s  total=458s
+L=160 b=3  cands=  73,255,752  t=  8.73s   8,389,575/s  total=466s
+L=161 b=1  cands=          18  t=  0.01s       2,327/s  total=466s
+L=161 b=2  cands=      51,840  t=  0.04s   1,181,616/s  total=466s
+L=161 b=3  cands=  74,183,040  t=  9.30s   7,976,939/s  total=476s
+L=162 b=1  cands=          18  t=  0.01s       2,952/s  total=476s
+L=162 b=2  cands=      52,164  t=  0.04s   1,196,498/s  total=476s
+L=162 b=3  cands=  75,116,160  t=  9.63s   7,803,126/s  total=485s
+L=163 b=1  cands=          18  t=  0.01s       2,225/s  total=485s
+L=163 b=2  cands=      52,488  t=  0.04s   1,253,955/s  total=485s
+L=163 b=3  cands=  76,055,112  t=  9.79s   7,768,201/s  total=495s
+L=164 b=1  cands=          18  t=  0.01s       3,326/s  total=495s
+L=164 b=2  cands=      52,812  t=  0.04s   1,363,648/s  total=495s
+L=164 b=3  cands=  76,999,896  t=  9.55s   8,064,577/s  total=505s
+L=165 b=1  cands=          18  t=  0.01s       2,907/s  total=505s
+L=165 b=2  cands=      53,136  t=  0.05s   1,125,235/s  total=505s
+L=165 b=3  cands=  77,950,512  t=  9.98s   7,807,972/s  total=515s
+L=166 b=1  cands=          18  t=  0.01s       3,406/s  total=515s
+L=166 b=2  cands=      53,460  t=  0.04s   1,347,578/s  total=515s
+L=166 b=3  cands=  78,906,960  t=  9.88s   7,984,487/s  total=525s
+L=167 b=1  cands=          18  t=  0.01s       3,358/s  total=525s
+L=167 b=2  cands=      53,784  t=  0.04s   1,438,551/s  total=525s
+L=167 b=3  cands=  79,869,240  t=  9.15s   8,728,329/s  total=534s
+L=168 b=1  cands=          18  t=  0.01s       3,001/s  total=534s
+L=168 b=2  cands=      54,108  t=  0.04s   1,229,244/s  total=534s
+L=168 b=3  cands=  80,837,352  t=  9.77s   8,272,265/s  total=544s
+L=169 b=1  cands=          18  t=  0.01s       3,067/s  total=544s
+L=169 b=2  cands=      54,432  t=  0.04s   1,268,428/s  total=544s
+L=169 b=3  cands=  81,811,296  t= 10.13s   8,078,509/s  total=554s
+L=170 b=1  cands=          18  t=  0.01s       3,101/s  total=554s
+L=170 b=2  cands=      54,756  t=  0.04s   1,229,968/s  total=554s
+L=170 b=3  cands=  82,791,072  t=  9.78s   8,463,920/s  total=564s
+L=171 b=1  cands=          18  t=  0.01s       2,790/s  total=564s
+L=171 b=2  cands=      55,080  t=  0.05s   1,110,353/s  total=564s
+L=171 b=3  cands=  83,776,680  t=  9.82s   8,533,555/s  total=574s
+L=172 b=1  cands=          18  t=  0.01s       2,108/s  total=574s
+L=172 b=2  cands=      55,404  t=  0.06s   1,003,369/s  total=574s
+L=172 b=3  cands=  84,768,120  t= 10.08s   8,411,111/s  total=584s
+L=173 b=1  cands=          18  t=  0.01s       3,267/s  total=584s
+L=173 b=2  cands=      55,728  t=  0.04s   1,515,628/s  total=584s
+L=173 b=3  cands=  85,765,392  t=  9.94s   8,625,796/s  total=594s
+L=174 b=1  cands=          18  t=  0.01s       2,585/s  total=594s
+L=174 b=2  cands=      56,052  t=  0.05s   1,163,379/s  total=594s
+L=174 b=3  cands=  86,768,496  t= 11.02s   7,874,613/s  total=605s
+L=175 b=1  cands=          18  t=  0.01s       2,746/s  total=605s
+L=175 b=2  cands=      56,376  t=  0.05s   1,183,978/s  total=605s
+L=175 b=3  cands=  87,777,432  t= 11.09s   7,912,801/s  total=616s
+L=176 b=1  cands=          18  t=  0.01s       2,351/s  total=616s
+L=176 b=2  cands=      56,700  t=  0.05s   1,071,518/s  total=616s
+L=176 b=3  cands=  88,792,200  t= 10.10s   8,791,206/s  total=626s
+L=177 b=1  cands=          18  t=  0.01s       2,370/s  total=626s
+L=177 b=2  cands=      57,024  t=  0.04s   1,306,216/s  total=626s
+L=177 b=3  cands=  89,812,800  t= 10.91s   8,234,155/s  total=637s
+L=178 b=1  cands=          18  t=  0.02s       1,135/s  total=637s
+L=178 b=2  cands=      57,348  t=  0.07s     777,831/s  total=637s
+L=178 b=3  cands=  90,839,232  t= 11.12s   8,168,833/s  total=648s
+L=179 b=1  cands=          18  t=  0.01s       2,122/s  total=648s
+L=179 b=2  cands=      57,672  t=  0.05s   1,194,620/s  total=648s
+L=179 b=3  cands=  91,871,496  t= 12.25s   7,498,291/s  total=661s
+L=180 b=1  cands=          18  t=  0.01s       3,267/s  total=661s
+L=180 b=2  cands=      57,996  t=  0.04s   1,513,642/s  total=661s
+L=180 b=3  cands=  92,909,592  t= 11.18s   8,310,719/s  total=672s
+L=181 b=1  cands=          18  t=  0.01s       2,925/s  total=672s
+L=181 b=2  cands=      58,320  t=  0.05s   1,234,335/s  total=672s
+L=181 b=3  cands=  93,953,520  t= 11.17s   8,409,156/s  total=683s
+L=182 b=1  cands=          18  t=  0.01s       2,598/s  total=683s
+L=182 b=2  cands=      58,644  t=  0.04s   1,460,044/s  total=683s
+L=182 b=3  cands=  95,003,280  t= 11.52s   8,243,754/s  total=695s
+L=183 b=1  cands=          18  t=  0.01s       2,467/s  total=695s
+L=183 b=2  cands=      58,968  t=  0.04s   1,313,913/s  total=695s
+L=183 b=3  cands=  96,058,872  t= 12.10s   7,935,966/s  total=707s
+L=184 b=1  cands=          18  t=  0.01s       2,367/s  total=707s
+L=184 b=2  cands=      59,292  t=  0.06s   1,019,575/s  total=707s
+L=184 b=3  cands=  97,120,296  t= 11.79s   8,234,557/s  total=719s
+L=185 b=1  cands=          18  t=  0.01s       2,839/s  total=719s
+L=185 b=2  cands=      59,616  t=  0.05s   1,259,166/s  total=719s
+L=185 b=3  cands=  98,187,552  t= 11.98s   8,192,977/s  total=731s
+L=186 b=1  cands=          18  t=  0.01s       2,629/s  total=731s
+L=186 b=2  cands=      59,940  t=  0.05s   1,201,838/s  total=731s
+L=186 b=3  cands=  99,260,640  t= 12.07s   8,221,508/s  total=743s
+L=187 b=1  cands=          18  t=  0.01s       2,533/s  total=743s
+L=187 b=2  cands=      60,264  t=  0.05s   1,156,832/s  total=743s
+L=187 b=3  cands= 100,339,560  t= 12.27s   8,180,398/s  total=755s
+L=188 b=1  cands=          18  t=  0.01s       2,475/s  total=755s
+L=188 b=2  cands=      60,588  t=  0.05s   1,239,698/s  total=755s
+L=188 b=3  cands= 101,424,312  t= 11.76s   8,626,911/s  total=767s
+L=189 b=1  cands=          18  t=  0.01s       2,374/s  total=767s
+L=189 b=2  cands=      60,912  t=  0.06s   1,078,503/s  total=767s
+L=189 b=3  cands= 102,514,896  t= 13.19s   7,774,365/s  total=780s
+L=190 b=1  cands=          18  t=  0.01s       1,819/s  total=780s
+L=190 b=2  cands=      61,236  t=  0.06s   1,009,402/s  total=780s
+L=190 b=3  cands= 103,611,312  t= 13.99s   7,403,598/s  total=794s
+L=191 b=1  cands=          18  t=  0.01s       3,471/s  total=794s
+L=191 b=2  cands=      61,560  t=  0.04s   1,544,248/s  total=794s
+L=191 b=3  cands= 104,713,560  t= 12.92s   8,106,890/s  total=807s
+L=192 b=1  cands=          18  t=  0.01s       2,640/s  total=807s
+L=192 b=2  cands=      61,884  t=  0.04s   1,463,020/s  total=807s
+L=192 b=3  cands= 105,821,640  t= 13.50s   7,839,084/s  total=821s
+L=193 b=1  cands=          18  t=  0.01s       2,711/s  total=821s
+L=193 b=2  cands=      62,208  t=  0.05s   1,175,730/s  total=821s
+L=193 b=3  cands= 106,935,552  t= 14.66s   7,296,595/s  total=836s
+L=194 b=1  cands=          18  t=  0.01s       1,774/s  total=836s
+L=194 b=2  cands=      62,532  t=  0.08s     825,727/s  total=836s
+L=194 b=3  cands= 108,055,296  t= 13.09s   8,253,532/s  total=849s
+L=195 b=1  cands=          18  t=  0.01s       2,082/s  total=849s
+L=195 b=2  cands=      62,856  t=  0.05s   1,265,224/s  total=849s
+L=195 b=3  cands= 109,180,872  t= 13.08s   8,344,231/s  total=862s
+L=196 b=1  cands=          18  t=  0.01s       2,061/s  total=862s
+L=196 b=2  cands=      63,180  t=  0.07s     917,392/s  total=862s
+L=196 b=3  cands= 110,312,280  t= 12.86s   8,580,503/s  total=875s
+L=197 b=1  cands=          18  t=  0.01s       1,806/s  total=875s
+L=197 b=2  cands=      63,504  t=  0.08s     757,028/s  total=875s
+L=197 b=3  cands= 111,449,520  t= 13.52s   8,245,199/s  total=888s
+L=198 b=1  cands=          18  t=  0.01s       2,198/s  total=888s
+L=198 b=2  cands=      63,828  t=  0.04s   1,483,517/s  total=889s
+L=198 b=3  cands= 112,592,592  t= 14.63s   7,694,956/s  total=903s
+L=199 b=1  cands=          18  t=  0.01s       2,877/s  total=903s
+L=199 b=2  cands=      64,152  t=  0.04s   1,476,330/s  total=903s
+L=199 b=3  cands= 113,741,496  t= 15.83s   7,183,694/s  total=919s
+L=200 b=1  cands=          18  t=  0.01s       2,216/s  total=919s
+L=200 b=2  cands=      64,476  t=  0.06s   1,055,637/s  total=919s
+L=200 b=3  cands= 114,896,232  t= 13.97s   8,224,604/s  total=933s
+
+✅ DONE – no R=2 cycles found.
+Total candidates: 7,558,109,808  Time: 933.1s
