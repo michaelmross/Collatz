@@ -2,7 +2,7 @@
 
 Computational support for:
 
-**"Spike Structures, Finite-State Exclusion, and Bounded-Exponent Collatz Cycles"**
+**"Spike Structures, Finite-State Exclusion, and Bounded-Exponent Collatz Cycles"**  
 Michael M. Ross
 
 *Zenodo Record:* [19039376](https://zenodo.org/records/19039376)
