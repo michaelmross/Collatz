@@ -3,7 +3,7 @@
 Computational companion to:
 
 > **Inverse Pairs and the Loop Structure of Collatz-Type Functions**  
-> Michael M. Ross, Independent Researcher
+> Michael M. Ross, 2026
 
 ---
 
