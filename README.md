@@ -1,4 +1,4 @@
-# Collatz R=2 Cycle Search
+# spike_certify_fast.py
 
 Computational support for:
 
