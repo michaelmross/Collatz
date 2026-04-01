@@ -1,0 +1,1494 @@
+=================================================================
+ANALYSIS 1: Loop finder
+n = 3..500,  x = 1..300 (odd),  MAX_ITER = 5000
+=================================================================
+
+n = 5:
+  length   3  min=    19  max=    49  members=[19, 31, 49]
+  length   3  min=    23  max=    37  members=[23, 29, 37]
+  length  17  min=   187  max=  2773  members=[187, 283, 427, 587, 643, 781, 883, 967]...
+  length  17  min=   347  max=  3397  members=[347, 359, 407, 461, 523, 541, 613, 667]...
+
+n = 7:
+  length   2  min=     5  max=    11  members=[5, 11]
+
+n = 11:
+  length   2  min=     1  max=     7  members=[1, 7]
+  length   8  min=    13  max=    79  members=[13, 25, 29, 31, 35, 43, 49, 79]
+
+n = 13:
+  length  15  min=   131  max=  1853  members=[131, 179, 203, 275, 311, 419, 473, 635]...
+  length   5  min=   211  max=  1121  members=[211, 323, 491, 743, 1121]
+  length   5  min=   227  max=   797  members=[227, 347, 527, 601, 797]
+  length   5  min=   251  max=   665  members=[251, 383, 439, 581, 665]
+  length   5  min=   259  max=   905  members=[259, 341, 395, 599, 905]
+  length   5  min=   283  max=   653  members=[283, 373, 431, 493, 653]
+  length   5  min=   287  max=   761  members=[287, 331, 437, 503, 761]
+
+n = 15:
+  length   3  min=    57  max=   147  members=[57, 93, 147]
+  length   3  min=    69  max=   111  members=[69, 87, 111]
+  length  17  min=   561  max=  8319  members=[561, 849, 1281, 1761, 1929, 2343, 2649, 2901]...
+
+n = 17:
+  length   2  min=     1  max=     5  members=[1, 5]
+  length  18  min=    23  max=   181  members=[23, 25, 31, 35, 43, 55, 59, 61]...
+
+n = 19:
+  length   5  min=     5  max=    35  members=[5, 7, 17, 31, 35]
+
+n = 21:
+  length   2  min=    15  max=    33  members=[15, 33]
+
+n = 23:
+  length   2  min=     5  max=    19  members=[5, 19]
+  length   2  min=     7  max=    11  members=[7, 11]
+  length  26  min=    41  max=  1651  members=[41, 47, 49, 55, 73, 85, 121, 139]...
+
+n = 25:
+  length   8  min=     7  max=   137  members=[7, 11, 23, 29, 47, 83, 109, 137]
+  length   4  min=    17  max=    41  members=[17, 19, 37, 41]
+  length   3  min=    95  max=   245  members=[95, 155, 245]
+  length   3  min=   115  max=   185  members=[115, 145, 185]
+
+n = 29:
+  length   9  min=    11  max=   121  members=[11, 31, 47, 49, 53, 61, 71, 85]...
+
+n = 31:
+  length  12  min=    13  max=   131  members=[13, 17, 29, 35, 41, 53, 59, 67]...
+
+n = 33:
+  length   2  min=     3  max=    21  members=[3, 21]
+  length   8  min=    39  max=   237  members=[39, 75, 87, 93, 105, 129, 147, 237]
+
+n = 35:
+  length   4  min=    13  max=   127  members=[13, 37, 73, 127]
+  length   4  min=    17  max=    79  members=[17, 41, 43, 79]
+  length   2  min=    25  max=    55  members=[25, 55]
+  length   3  min=   133  max=   343  members=[133, 217, 343]
+  length   3  min=   161  max=   259  members=[161, 203, 259]
+
+n = 37:
+  length   3  min=    19  max=    89  members=[19, 47, 89]
+  length   3  min=    23  max=    53  members=[23, 49, 53]
+  length   3  min=    29  max=    65  members=[29, 31, 65]
+
+n = 39:
+  length  15  min=   393  max=  5559  members=[393, 537, 609, 825, 933, 1257, 1419, 1905]...
+  length   5  min=   633  max=  3363  members=[633, 969, 1473, 2229, 3363]
+  length   5  min=   681  max=  2391  members=[681, 1041, 1581, 1803, 2391]
+  length   5  min=   777  max=  2715  members=[777, 1023, 1185, 1797, 2715]
+
+n = 41:
+  length   8  min=     1  max=   157  members=[1, 11, 19, 37, 47, 49, 91, 157]
+
+n = 43:
+  length   3  min=     1  max=    23  members=[1, 7, 23]
+
+n = 45:
+  length   3  min=   171  max=   441  members=[171, 279, 441]
+  length   3  min=   207  max=   333  members=[207, 261, 333]
+
+n = 47:
+  length   7  min=     5  max=    43  members=[5, 11, 13, 19, 31, 35, 43]
+  length  16  min=    25  max=   643  members=[25, 49, 61, 97, 115, 169, 197, 247]...
+  length   4  min=    65  max=   331  members=[65, 121, 205, 331]
+  length   4  min=    73  max=   223  members=[73, 133, 179, 223]
+  length   4  min=    85  max=   211  members=[85, 125, 151, 211]
+  length   4  min=    89  max=   259  members=[89, 103, 157, 259]
+  length   4  min=   101  max=   175  members=[101, 119, 143, 175]
+
+n = 49:
+  length  22  min=    25  max=  1409  members=[25, 31, 71, 79, 89, 131, 143, 221]...
+  length   2  min=    35  max=    77  members=[35, 77]
+
+n = 51:
+  length   2  min=     3  max=    15  members=[3, 15]
+  length  18  min=    69  max=   543  members=[69, 75, 93, 105, 129, 165, 177, 183]...
+
+n = 53:
+  length  17  min=   103  max=   757  members=[103, 107, 115, 125, 149, 175, 181, 187]...
+
+n = 55:
+  length   4  min=     1  max=    71  members=[1, 29, 67, 71]
+  length   2  min=     5  max=    35  members=[5, 35]
+  length   2  min=     7  max=    19  members=[7, 19]
+  length  16  min=    41  max=   827  members=[41, 61, 89, 91, 103, 119, 161, 269]...
+  length   8  min=    65  max=   395  members=[65, 125, 145, 155, 175, 215, 245, 395]
+  length   3  min=   209  max=   539  members=[209, 341, 539]
+  length   3  min=   253  max=   407  members=[253, 319, 407]
+
+n = 57:
+  length   5  min=    15  max=   105  members=[15, 21, 51, 93, 105]
+
+n = 59:
+  length  11  min=     1  max=   139  members=[1, 13, 19, 23, 29, 31, 49, 73]...
+  length   6  min=   133  max=  1399  members=[133, 229, 373, 589, 913, 1399]
+  length   6  min=   149  max=   775  members=[149, 253, 409, 497, 643, 775]
+  length   6  min=   181  max=   751  members=[181, 289, 301, 463, 481, 751]
+  length   6  min=   185  max=   967  members=[185, 245, 307, 397, 625, 967]
+  length   6  min=   217  max=   559  members=[217, 281, 353, 355, 451, 559]
+  length   6  min=   221  max=   571  members=[221, 275, 347, 361, 443, 571]
+
+n = 61:
+  length  41  min=   235  max= 33257  members=[235, 293, 367, 383, 451, 469, 487, 581]...
+
+n = 63:
+  length   2  min=    45  max=    99  members=[45, 99]
+
+n = 65:
+  length  12  min=    19  max=   421  members=[19, 29, 31, 61, 67, 79, 83, 133]...
+  length   3  min=   247  max=   637  members=[247, 403, 637]
+  length   3  min=   299  max=   481  members=[299, 377, 481]
+  length  15  min=   655  max=  9265  members=[655, 895, 1015, 1375, 1555, 2095, 2365, 3175]...
+
+n = 67:
+  length  16  min=    17  max=  1391  members=[17, 23, 59, 61, 85, 125, 161, 221]...
+
+n = 69:
+  length   2  min=    15  max=    57  members=[15, 57]
+  length   2  min=    21  max=    33  members=[21, 33]
+  length  26  min=   123  max=  4953  members=[123, 141, 147, 165, 219, 255, 363, 417]...
+
+n = 71:
+  length   5  min=    29  max=   151  members=[29, 77, 79, 131, 151]
+  length   5  min=    31  max=   307  members=[31, 41, 97, 181, 307]
+
+n = 73:
+  length   4  min=     5  max=    53  members=[5, 11, 29, 53]
+  length  32  min=    19  max=  2105  members=[19, 23, 25, 37, 41, 49, 55, 65]...
+  length   8  min=    47  max=   245  members=[47, 83, 101, 107, 139, 161, 197, 245]
+
+n = 75:
+  length   8  min=    21  max=   411  members=[21, 33, 69, 87, 141, 249, 327, 411]
+  length   4  min=    51  max=   123  members=[51, 57, 111, 123]
+  length   3  min=   285  max=   735  members=[285, 465, 735]
+  length   3  min=   345  max=   555  members=[345, 435, 555]
+
+n = 77:
+  length  16  min=     1  max=   445  members=[1, 5, 23, 37, 47, 71, 73, 95]...
+  length   2  min=     7  max=    49  members=[7, 49]
+  length   2  min=    55  max=   121  members=[55, 121]
+  length   8  min=    91  max=   553  members=[91, 175, 203, 217, 245, 301, 343, 553]
+
+n = 79:
+  length  20  min=     1  max=   587  members=[1, 13, 41, 43, 53, 59, 71, 73]...
+  length  20  min=     7  max=   527  members=[7, 11, 17, 23, 25, 35, 37, 65]...
+  length  14  min=   233  max=  2459  members=[233, 385, 389, 487, 617, 623, 673, 871]...
+  length  14  min=   265  max=  1823  members=[265, 329, 437, 533, 541, 649, 695, 839]...
+
+n = 83:
+  length  14  min=    65  max=  2167  members=[65, 125, 139, 229, 319, 385, 485, 619]...
+  length   7  min=   109  max=  1375  members=[109, 205, 263, 349, 565, 889, 1375]
+  length   7  min=   157  max=   727  members=[157, 233, 277, 283, 391, 457, 727]
+
+n = 85:
+  length   2  min=     5  max=    25  members=[5, 25]
+  length  56  min=     7  max=  3749  members=[7, 23, 53, 61, 67, 71, 77, 79]...
+  length  18  min=   115  max=   905  members=[115, 125, 155, 175, 215, 275, 295, 305]...
+  length   3  min=   323  max=   833  members=[323, 527, 833]
+
+n = 87:
+  length   9  min=    33  max=   363  members=[33, 93, 141, 147, 159, 183, 213, 255]...
+
+n = 89:
+  length   8  min=    17  max=   325  members=[17, 35, 61, 95, 97, 133, 187, 325]
+
+n = 91:
+  length  24  min=     1  max=  1739  members=[1, 29, 47, 55, 89, 145, 157, 163]...
+  length   6  min=    25  max=   503  members=[25, 83, 85, 173, 305, 503]
+  length   6  min=    59  max=   155  members=[59, 67, 73, 127, 139, 155]
+  length   2  min=    65  max=   143  members=[65, 143]
+  length  15  min=   917  max= 12971  members=[917, 1253, 1421, 1925, 2177, 2933, 3311, 4445]...
+
+n = 93:
+  length  12  min=    39  max=   393  members=[39, 51, 87, 105, 123, 159, 177, 201]...
+
+n = 95:
+  length  36  min=     1  max=  3019  members=[1, 13, 37, 49, 61, 67, 101, 103]...
+  length   5  min=    17  max=   283  members=[17, 59, 73, 157, 283]
+  length   5  min=    23  max=   211  members=[23, 41, 91, 109, 211]
+  length   5  min=    25  max=   175  members=[25, 35, 85, 155, 175]
+  length   3  min=   361  max=   931  members=[361, 589, 931]
+
+n = 97:
+  length   6  min=     1  max=   113  members=[1, 25, 43, 53, 109, 113]
+  length   3  min=    13  max=    37  members=[13, 17, 37]
+
+n = 99:
+  length   2  min=     9  max=    63  members=[9, 63]
+  length   8  min=   117  max=   711  members=[117, 225, 261, 279, 315, 387, 441, 711]
+
+n = 101:
+  length   6  min=     7  max=   265  members=[7, 61, 71, 143, 157, 265]
+  length   6  min=    11  max=   277  members=[11, 25, 67, 151, 233, 277]
+  length   3  min=    19  max=   169  members=[19, 79, 169]
+  length   3  min=    23  max=    89  members=[23, 85, 89]
+  length   3  min=    29  max=   121  members=[29, 47, 121]
+  length   3  min=    31  max=    97  members=[31, 49, 97]
+  length   3  min=    37  max=    65  members=[37, 53, 65]
+
+n = 103:
+  length   8  min=     5  max=   179  members=[5, 13, 35, 59, 71, 79, 85, 179]
+  length  22  min=    23  max=   359  members=[23, 29, 31, 43, 49, 53, 95, 97]...
+
+n = 105:
+  length   4  min=    39  max=   381  members=[39, 111, 219, 381]
+  length   4  min=    51  max=   237  members=[51, 123, 129, 237]
+  length   2  min=    75  max=   165  members=[75, 165]
+  length   3  min=   399  max=  1029  members=[399, 651, 1029]
+  length   3  min=   483  max=   777  members=[483, 609, 777]
+
+n = 107:
+  length  53  min=     1  max= 12103  members=[1, 5, 11, 17, 35, 43, 53, 55]...
+
+n = 109:
+  length  30  min=    19  max=  3773  members=[19, 65, 83, 137, 179, 323, 329, 539]...
+
+n = 111:
+  length   3  min=    57  max=   267  members=[57, 141, 267]
+  length   3  min=    69  max=   159  members=[69, 147, 159]
+  length   3  min=    87  max=   195  members=[87, 93, 195]
+
+n = 113:
+  length  12  min=     1  max=  1381  members=[1, 25, 29, 47, 127, 133, 247, 427]...
+
+n = 115:
+  length  13  min=    13  max=  1343  members=[13, 31, 49, 77, 127, 131, 173, 223]...
+  length  18  min=    17  max=  1247  members=[17, 83, 91, 97, 143, 181, 203, 221]...
+  length   2  min=    25  max=    95  members=[25, 95]
+  length   2  min=    35  max=    55  members=[35, 55]
+  length  26  min=   205  max=  8255  members=[205, 235, 245, 275, 365, 425, 605, 695]...
+  length   3  min=   437  max=  1127  members=[437, 713, 1127]
+
+n = 117:
+  length  15  min=  1179  max= 16677  members=[1179, 1611, 1827, 2475, 2799, 3771, 4257, 5715]...
+
+n = 119:
+  length  42  min=     1  max=  6523  members=[1, 61, 137, 143, 151, 265, 457, 643]...
+  length   2  min=     5  max=    67  members=[5, 67]
+  length   2  min=     7  max=    35  members=[7, 35]
+  length   2  min=    11  max=    19  members=[11, 19]
+  length  18  min=    23  max=   355  members=[23, 29, 37, 47, 55, 65, 71, 83]...
+  length   2  min=    85  max=   187  members=[85, 187]
+  length  14  min=   125  max=  1555  members=[125, 127, 173, 191, 215, 247, 269, 299]...
+  length  18  min=   161  max=  1267  members=[161, 175, 217, 245, 301, 385, 413, 427]...
+
+n = 121:
+  length  18  min=     5  max=   797  members=[5, 13, 17, 29, 31, 37, 43, 49]...
+  length   2  min=    11  max=    77  members=[11, 77]
+  length  46  min=    19  max=  1097  members=[19, 23, 35, 53, 65, 79, 89, 95]...
+  length   8  min=   143  max=   869  members=[143, 275, 319, 341, 385, 473, 539, 869]
+
+n = 123:
+  length   8  min=     3  max=   471  members=[3, 33, 57, 111, 141, 147, 273, 471]
+
+n = 125:
+  length   8  min=    35  max=   685  members=[35, 55, 115, 145, 235, 415, 545, 685]
+  length  19  min=    47  max=  4249  members=[47, 131, 133, 259, 451, 463, 599, 619]...
+  length   4  min=    85  max=   205  members=[85, 95, 185, 205]
+  length  19  min=   143  max=  1261  members=[143, 191, 239, 251, 277, 293, 347, 349]...
+  length   3  min=   475  max=  1225  members=[475, 775, 1225]
+
+n = 127:
+  length  18  min=     1  max=  1331  members=[1, 65, 161, 209, 265, 299, 305, 311]...
+  length  18  min=    41  max=   467  members=[41, 47, 55, 67, 73, 77, 83, 125]...
+
+n = 129:
+  length   3  min=     3  max=    69  members=[3, 21, 69]
+
+n = 131:
+  length  13  min=    13  max=   463  members=[13, 85, 95, 133, 193, 257, 265, 299]...
+  length  13  min=    17  max=   499  members=[17, 91, 101, 149, 155, 163, 169, 217]...
+  length  26  min=    23  max=  2215  members=[23, 25, 37, 55, 59, 77, 79, 103]...
+
+n = 133:
+  length  18  min=    11  max=   569  members=[11, 71, 83, 115, 145, 149, 163, 173]...
+  length   5  min=    35  max=   245  members=[35, 49, 119, 217, 245]
+  length  24  min=    59  max=  4421  members=[59, 113, 125, 127, 155, 257, 289, 299]...
+  length   2  min=    95  max=   209  members=[95, 209]
+
+n = 135:
+  length   3  min=   513  max=  1323  members=[513, 837, 1323]
+  length   3  min=   621  max=   999  members=[621, 783, 999]
+
+n = 137:
+  length   4  min=     1  max=   125  members=[1, 35, 121, 125]
+  length  40  min=    41  max=  4237  members=[41, 65, 83, 97, 103, 107, 119, 173]...
+  length  18  min=   503  max=106621  members=[503, 625, 823, 1303, 2023, 3103, 4723, 5399]...
+  length  18  min=   967  max= 17845  members=[967, 1363, 1519, 1619, 1907, 2113, 2231, 2347]...
+
+n = 139:
+  length  74  min=    11  max=  4235  members=[11, 19, 43, 49, 55, 67, 71, 85]...
+
+n = 141:
+  length   7  min=    15  max=   129  members=[15, 33, 39, 57, 93, 105, 129]
+  length  16  min=    75  max=  1929  members=[75, 147, 183, 291, 345, 507, 591, 741]...
+  length   4  min=   195  max=   993  members=[195, 363, 615, 993]
+  length   4  min=   219  max=   669  members=[219, 399, 537, 669]
+  length   4  min=   255  max=   633  members=[255, 375, 453, 633]
+  length   4  min=   267  max=   777  members=[267, 309, 471, 777]
+  length   4  min=   303  max=   525  members=[303, 357, 429, 525]
+
+n = 143:
+  length  80  min=     7  max= 44251  members=[7, 41, 49, 133, 145, 149, 161, 167]...
+  length   2  min=    13  max=    91  members=[13, 91]
+  length   7  min=    17  max=   667  members=[17, 43, 67, 97, 217, 397, 667]
+  length   7  min=    29  max=   163  members=[29, 61, 79, 95, 107, 115, 163]
+  length   8  min=   169  max=  1027  members=[169, 325, 377, 403, 455, 559, 637, 1027]
+  length  15  min=  1441  max= 20383  members=[1441, 1969, 2233, 3025, 3421, 4609, 5203, 6985]...
+
+n = 145:
+  length   2  min=     1  max=    37  members=[1, 37]
+  length  10  min=    23  max=   389  members=[23, 41, 67, 83, 107, 173, 197, 211]...
+  length  18  min=    47  max=  1313  members=[47, 77, 113, 121, 127, 143, 253, 263]...
+  length   9  min=    55  max=   605  members=[55, 155, 235, 245, 265, 305, 355, 425]...
+  length   3  min=   551  max=  1421  members=[551, 899, 1421]
+
+n = 147:
+  length  22  min=    75  max=  4227  members=[75, 93, 213, 237, 267, 393, 429, 663]...
+  length   2  min=   105  max=   231  members=[105, 231]
+
+n = 149:
+  length  33  min=    19  max= 39217  members=[19, 55, 97, 103, 155, 157, 209, 229]...
+
+n = 151:
+  length  40  min=    41  max=  3755  members=[41, 59, 95, 107, 109, 137, 203, 217]...
+  length  10  min=   113  max=   983  members=[113, 185, 245, 251, 353, 443, 605, 619]...
+
+n = 153:
+  length   2  min=     9  max=    45  members=[9, 45]
+  length  18  min=   207  max=  1629  members=[207, 225, 279, 315, 387, 495, 531, 549]...
+
+n = 155:
+  length  18  min=     1  max=   871  members=[1, 19, 49, 53, 79, 119, 151, 157]...
+  length  12  min=    65  max=   655  members=[65, 85, 145, 175, 205, 265, 295, 335]...
+  length   3  min=   589  max=  1519  members=[589, 961, 1519]
+
+n = 157:
+  length  12  min=    13  max=   845  members=[13, 17, 19, 49, 107, 239, 367, 437]...
+
+n = 159:
+  length  17  min=   309  max=  2271  members=[309, 321, 345, 375, 447, 525, 543, 561]...
+
+n = 161:
+  length   6  min=    11  max=   181  members=[11, 67, 97, 113, 125, 181]
+  length   6  min=    19  max=   149  members=[19, 43, 61, 109, 145, 149]
+  length  22  min=    25  max=  1297  members=[25, 29, 31, 59, 127, 167, 169, 271]...
+  length   2  min=    35  max=   133  members=[35, 133]
+  length   2  min=    49  max=    77  members=[49, 77]
+  length  16  min=    79  max=  2161  members=[79, 103, 157, 199, 235, 365, 379, 433]...
+  length   2  min=   115  max=   253  members=[115, 253]
+  length  26  min=   287  max= 11557  members=[287, 329, 343, 385, 511, 595, 847, 973]...
+
+n = 163:
+  length  49  min=    11  max=  6263  members=[11, 49, 59, 85, 155, 157, 181, 209]...
+  length  36  min=    17  max=  2915  members=[17, 23, 29, 43, 65, 73, 107, 119]...
+
+n = 165:
+  length   4  min=     3  max=   213  members=[3, 87, 201, 213]
+  length   2  min=    15  max=   105  members=[15, 105]
+  length   2  min=    21  max=    57  members=[21, 57]
+  length  16  min=   123  max=  2481  members=[123, 183, 267, 273, 309, 357, 483, 807]...
+  length   8  min=   195  max=  1185  members=[195, 375, 435, 465, 525, 645, 735, 1185]
+  length   3  min=   627  max=  1617  members=[627, 1023, 1617]
+
+n = 167:
+  length  20  min=    13  max=   535  members=[13, 17, 35, 41, 53, 55, 83, 91]...
+  length   9  min=    95  max=   667  members=[95, 113, 245, 253, 271, 389, 451, 463]...
+  length   9  min=   127  max=   859  members=[127, 133, 137, 283, 289, 299, 343, 517]...
+
+n = 169:
+  length   9  min=    11  max=   173  members=[11, 25, 43, 59, 61, 77, 101, 149]...
+  length  23  min=    17  max=  2117  members=[17, 55, 95, 125, 167, 197, 227, 277]...
+  length  15  min=  1703  max= 24089  members=[1703, 2327, 2639, 3575, 4043, 5447, 6149, 8255]...
+
+n = 171:
+  length   5  min=    45  max=   315  members=[45, 63, 153, 279, 315]
+
+n = 173:
+  length  14  min=     7  max=   637  members=[7, 23, 29, 65, 67, 97, 103, 121]...
+  length   7  min=    37  max=   193  members=[37, 41, 47, 71, 157, 161, 193]
+
+n = 175:
+  length  12  min=    29  max=  1571  members=[29, 71, 97, 131, 233, 251, 437, 601]...
+  length   8  min=    49  max=   959  members=[49, 77, 161, 203, 329, 581, 763, 959]
+  length   8  min=    53  max=   827  members=[53, 83, 167, 169, 341, 493, 599, 827]
+  length   4  min=    65  max=   635  members=[65, 185, 365, 635]
+  length   4  min=    73  max=   383  members=[73, 197, 331, 383]
+  length   4  min=    85  max=   395  members=[85, 205, 215, 395]
+  length   4  min=    89  max=   419  members=[89, 179, 221, 419]
+  length   4  min=   101  max=   239  members=[101, 211, 223, 239]
+  length   4  min=   103  max=   491  members=[103, 121, 269, 491]
+  length   4  min=   119  max=   287  members=[119, 133, 259, 287]
+  length   2  min=   125  max=   275  members=[125, 275]
+  length   4  min=   143  max=   323  members=[143, 151, 157, 323]
+  length   3  min=   665  max=  1715  members=[665, 1085, 1715]
+
+n = 177:
+  length  11  min=     3  max=   417  members=[3, 39, 57, 69, 87, 93, 147, 219]...
+  length   6  min=   399  max=  4197  members=[399, 687, 1119, 1767, 2739, 4197]
+  length   6  min=   447  max=  2325  members=[447, 759, 1227, 1491, 1929, 2325]
+  length   6  min=   543  max=  2253  members=[543, 867, 903, 1389, 1443, 2253]
+  length   6  min=   555  max=  2901  members=[555, 735, 921, 1191, 1875, 2901]
+  length   6  min=   651  max=  1677  members=[651, 843, 1059, 1065, 1353, 1677]
+
+n = 179:
+  length  62  min=     5  max=  9379  members=[5, 37, 97, 145, 185, 187, 221, 233]...
+
+n = 181:
+  length  40  min=    11  max= 10673  members=[11, 17, 19, 29, 41, 67, 107, 115]...
+  length  10  min=    23  max=  2249  members=[23, 125, 139, 185, 299, 433, 539, 899]...
+  length  10  min=    55  max=   953  members=[55, 95, 155, 173, 175, 233, 323, 353]...
+
+n = 183:
+  length  41  min=   705  max= 99771  members=[705, 879, 1101, 1149, 1353, 1407, 1461, 1743]...
+
+n = 185:
+  length  36  min=     1  max=  6601  members=[1, 11, 47, 109, 113, 131, 163, 263]...
+  length   3  min=    95  max=   445  members=[95, 235, 445]
+  length   3  min=   115  max=   265  members=[115, 245, 265]
+  length   3  min=   145  max=   325  members=[145, 155, 325]
+  length   3  min=   703  max=  1813  members=[703, 1147, 1813]
+
+n = 187:
+  length  12  min=     5  max=  1271  members=[5, 101, 125, 151, 245, 281, 433, 461]...
+  length   2  min=    11  max=    55  members=[11, 55]
+  length   2  min=    17  max=   119  members=[17, 119]
+  length  12  min=    43  max=   623  members=[43, 49, 53, 79, 167, 173, 199, 203]...
+  length   8  min=   221  max=  1343  members=[221, 425, 493, 527, 595, 731, 833, 1343]
+  length  18  min=   253  max=  1991  members=[253, 275, 341, 385, 473, 605, 649, 671]...
+
+n = 189:
+  length   2  min=   135  max=   297  members=[135, 297]
+
+n = 191:
+  length  24  min=    47  max=  1519  members=[47, 55, 61, 83, 89, 187, 229, 377]...
+  length  25  min=   961  max= 72547  members=[961, 1537, 2401, 3697, 4225, 4873, 5641, 6433]...
+
+n = 193:
+  length  29  min=     1  max=  1349  members=[1, 7, 49, 55, 85, 107, 121, 139]...
+  length   5  min=     5  max=   149  members=[5, 13, 29, 35, 149]
+  length  12  min=    31  max=   941  members=[31, 101, 143, 205, 209, 311, 331, 377]...
+  length  50  min=    91  max= 18221  members=[91, 223, 233, 287, 431, 503, 527, 539]...
+
+n = 195:
+  length  12  min=    57  max=  1263  members=[57, 87, 93, 183, 201, 237, 249, 399]...
+  length   3  min=   741  max=  1911  members=[741, 1209, 1911]
+  length  15  min=  1965  max= 27795  members=[1965, 2685, 3045, 4125, 4665, 6285, 7095, 9525]...
+
+n = 197:
+  length  69  min=     5  max=  4177  members=[5, 13, 19, 29, 43, 49, 53, 59]...
+
+n = 199:
+  length   6  min=    13  max=   215  members=[13, 77, 119, 139, 211, 215]
+  length   6  min=    47  max=   227  members=[47, 55, 59, 85, 91, 227]
+
+n = 201:
+  length  16  min=    51  max=  4173  members=[51, 69, 177, 183, 255, 375, 483, 663]...
+
+n = 203:
+  length   2  min=     1  max=   103  members=[1, 103]
+  length  54  min=    43  max= 10327  members=[43, 59, 61, 73, 83, 95, 97, 113]...
+  length   9  min=    77  max=   847  members=[77, 217, 329, 343, 371, 427, 497, 595]...
+  length   2  min=   145  max=   319  members=[145, 319]
+
+n = 205:
+  length   8  min=     5  max=   785  members=[5, 55, 95, 185, 235, 245, 455, 785]
+  length  40  min=    43  max=  1649  members=[43, 47, 53, 67, 79, 91, 107, 143]...
+  length   3  min=   779  max=  2009  members=[779, 1271, 2009]
+
+n = 207:
+  length   2  min=    45  max=   171  members=[45, 171]
+  length   2  min=    63  max=    99  members=[63, 99]
+  length  26  min=   369  max= 14859  members=[369, 423, 441, 495, 657, 765, 1089, 1251]...
+
+n = 209:
+  length  26  min=     1  max=  4381  members=[1, 5, 7, 23, 29, 37, 53, 65]...
+  length   2  min=    19  max=   133  members=[19, 133]
+  length   5  min=    55  max=   385  members=[55, 77, 187, 341, 385]
+  length   8  min=   175  max=  4165  members=[175, 367, 397, 655, 1087, 1735, 2707, 4165]
+  length   8  min=   235  max=  2437  members=[235, 395, 457, 575, 697, 967, 1555, 2437]
+  length   8  min=   247  max=  1501  members=[247, 475, 551, 589, 665, 817, 931, 1501]
+  length   8  min=   359  max=  1069  members=[359, 409, 427, 611, 643, 745, 1021, 1069]
+
+n = 211:
+  length  46  min=    37  max=  6287  members=[37, 65, 67, 73, 103, 107, 121, 133]...
+
+n = 213:
+  length   5  min=    87  max=   453  members=[87, 231, 237, 393, 453]
+  length   5  min=    93  max=   921  members=[93, 123, 291, 543, 921]
+
+n = 215:
+  length  18  min=     1  max=  3187  members=[1, 109, 233, 257, 271, 457, 493, 611]...
+  length   3  min=     5  max=   115  members=[5, 35, 115]
+  length   9  min=    31  max=   619  members=[31, 77, 221, 223, 259, 341, 383, 439]...
+  length   9  min=    47  max=   811  members=[47, 89, 151, 167, 179, 241, 331, 469]...
+  length   3  min=   817  max=  2107  members=[817, 1333, 2107]
+
+n = 217:
+  length  24  min=    17  max=  4157  members=[17, 25, 61, 67, 73, 109, 115, 167]...
+  length  42  min=    59  max=  5129  members=[59, 65, 97, 101, 103, 127, 197, 227]...
+  length  12  min=    91  max=   917  members=[91, 119, 203, 245, 287, 371, 413, 469]...
+  length   2  min=   155  max=   341  members=[155, 341]
+
+n = 219:
+  length   4  min=    15  max=   159  members=[15, 33, 87, 159]
+  length  32  min=    57  max=  6315  members=[57, 69, 75, 111, 123, 147, 165, 195]...
+  length   8  min=   141  max=   735  members=[141, 249, 303, 321, 417, 483, 591, 735]
+
+n = 221:
+  length   8  min=     5  max=   409  members=[5, 59, 181, 191, 199, 353, 397, 409]
+  length   2  min=    13  max=    65  members=[13, 65]
+  length  18  min=   299  max=  2353  members=[299, 325, 403, 455, 559, 715, 767, 793]...
+
+n = 223:
+  length  24  min=    35  max=  2063  members=[35, 41, 125, 167, 173, 181, 259, 271]...
+  length  24  min=    71  max=  3035  members=[71, 77, 79, 109, 113, 115, 131, 227]...
+
+n = 225:
+  length   8  min=    63  max=  1233  members=[63, 99, 207, 261, 423, 747, 981, 1233]
+  length   4  min=   153  max=   369  members=[153, 171, 333, 369]
+  length   3  min=   855  max=  2205  members=[855, 1395, 2205]
+
+n = 227:
+  length  26  min=     5  max=   799  members=[5, 7, 23, 31, 37, 41, 47, 73]...
+
+n = 229:
+  length   6  min=     7  max=   341  members=[7, 73, 125, 151, 313, 341]
+  length   3  min=    19  max=   329  members=[19, 143, 329]
+  length   3  min=    23  max=   169  members=[23, 149, 169]
+  length   3  min=    29  max=   233  members=[29, 79, 233]
+  length   3  min=    31  max=   161  members=[31, 89, 161]
+  length   3  min=    37  max=   121  members=[37, 85, 121]
+  length   3  min=    47  max=   185  members=[47, 49, 185]
+  length   3  min=    53  max=    97  members=[53, 65, 97]
+
+n = 231:
+  length  16  min=     3  max=  1335  members=[3, 15, 69, 111, 141, 213, 219, 285]...
+  length   2  min=    21  max=   147  members=[21, 147]
+  length   2  min=   165  max=   363  members=[165, 363]
+  length   8  min=   273  max=  1659  members=[273, 525, 609, 651, 735, 903, 1029, 1659]
+
+n = 233:
+  length  48  min=     5  max=  1117  members=[5, 7, 19, 31, 49, 53, 79, 89]...
+  length   8  min=   919  max= 12889  members=[919, 1495, 2359, 3655, 5599, 8515, 9725, 12889]
+  length  16  min=  1015  max= 11005  members=[1015, 1039, 1639, 1675, 2311, 2575, 2629, 3583]...
+  length   8  min=  1111  max=  9973  members=[1111, 1783, 2791, 2885, 3769, 4303, 6571, 9973]
+
+n = 235:
+  length  11  min=    11  max=   539  members=[11, 67, 109, 203, 211, 217, 281, 391]...
+  length  11  min=    17  max=   647  members=[17, 83, 121, 131, 143, 157, 271, 283]...
+  length  11  min=    19  max=  1703  members=[19, 23, 73, 167, 227, 229, 461, 809]...
+  length   7  min=    25  max=   215  members=[25, 55, 65, 95, 155, 175, 215]
+  length  16  min=   125  max=  3215  members=[125, 245, 305, 485, 575, 845, 985, 1235]...
+  length   4  min=   325  max=  1655  members=[325, 605, 1025, 1655]
+  length   4  min=   365  max=  1115  members=[365, 665, 895, 1115]
+  length   4  min=   425  max=  1055  members=[425, 625, 755, 1055]
+  length   4  min=   445  max=  1295  members=[445, 515, 785, 1295]
+  length   3  min=   893  max=  2303  members=[893, 1457, 2303]
+
+n = 237:
+  length  20  min=     3  max=  1761  members=[3, 39, 123, 129, 159, 177, 213, 219]...
+  length  20  min=    21  max=  1581  members=[21, 33, 51, 69, 75, 105, 111, 195]...
+  length  14  min=   699  max=  7377  members=[699, 1155, 1167, 1461, 1851, 1869, 2019, 2613]...
+
+n = 239:
+  length  26  min=     1  max=  7411  members=[1, 17, 61, 91, 109, 121, 145, 157]...
+  length  13  min=    13  max=  1759  members=[13, 41, 59, 139, 181, 235, 353, 391]...
+  length  13  min=    19  max=  3163  members=[19, 37, 53, 175, 191, 199, 203, 209]...
+  length  18  min=   113  max=  4675  members=[113, 289, 523, 553, 797, 949, 1217, 1315]...
+
+n = 241:
+  length  40  min=     7  max=  2693  members=[7, 43, 65, 71, 109, 131, 149, 185]...
+  length  30  min=    59  max= 19157  members=[59, 77, 125, 209, 217, 223, 253, 257]...
+
+n = 245:
+  length  66  min=    43  max=111913  members=[43, 47, 103, 169, 187, 193, 199, 263]...
+  length   4  min=    91  max=   889  members=[91, 259, 511, 889]
+  length   4  min=   119  max=   553  members=[119, 287, 301, 553]
+  length  22  min=   125  max=  7045  members=[125, 155, 355, 395, 445, 655, 715, 1105]...
+  length  22  min=   167  max=  5569  members=[167, 299, 317, 341, 373, 491, 571, 859]...
+  length   2  min=   175  max=   385  members=[175, 385]
+  length   3  min=   931  max=  2401  members=[931, 1519, 2401]
+
+n = 247:
+  length  36  min=     1  max=  5063  members=[1, 77, 125, 137, 175, 193, 239, 241]...
+  length   2  min=     5  max=   131  members=[5, 131]
+  length   2  min=     7  max=    67  members=[7, 67]
+  length   2  min=    11  max=    35  members=[11, 35]
+  length   5  min=    65  max=   455  members=[65, 91, 221, 403, 455]
+  length  16  min=   145  max=  5099  members=[145, 269, 341, 457, 527, 635, 809, 1201]...
+  length  16  min=   337  max=  2039  members=[337, 367, 385, 407, 431, 629, 701, 769]...
+
+n = 249:
+  length  14  min=   195  max=  6501  members=[195, 375, 417, 687, 957, 1155, 1455, 1857]...
+  length   7  min=   327  max=  4125  members=[327, 615, 789, 1047, 1695, 2667, 4125]
+  length   7  min=   471  max=  2181  members=[471, 699, 831, 849, 1173, 1371, 2181]
+
+n = 251:
+  length  40  min=    91  max= 15787  members=[91, 115, 125, 131, 149, 161, 169, 223]...
+
+n = 253:
+  length  89  min=    13  max=117569  members=[13, 25, 41, 47, 59, 73, 131, 167]...
+  length  19  min=    17  max=   881  members=[17, 19, 83, 137, 155, 181, 191, 199]...
+  length   2  min=    23  max=   161  members=[23, 161]
+  length   2  min=    55  max=   209  members=[55, 209]
+  length   2  min=    77  max=   121  members=[77, 121]
+  length   8  min=   299  max=  1817  members=[299, 575, 667, 713, 805, 989, 1127, 1817]
+  length  26  min=   451  max= 18161  members=[451, 517, 539, 605, 803, 935, 1331, 1529]...
+
+n = 255:
+  length   2  min=    15  max=    75  members=[15, 75]
+  length  56  min=    21  max= 11247  members=[21, 69, 159, 183, 201, 213, 231, 237]...
+  length  18  min=   345  max=  2715  members=[345, 375, 465, 525, 645, 825, 885, 915]...
+  length   3  min=   969  max=  2499  members=[969, 1581, 2499]
+
+n = 257:
+  length  16  min=     1  max=  1009  members=[1, 11, 65, 85, 97, 113, 137, 145]...
+  length  16  min=   367  max=  3829  members=[367, 679, 743, 905, 1121, 1147, 1243, 1409]...
+
+n = 259:
+  length  12  min=    29  max=  1199  members=[29, 173, 223, 241, 389, 433, 491, 649]...
+  length  12  min=    59  max=  1703  members=[59, 71, 109, 293, 401, 569, 613, 671]...
+  length  18  min=    67  max=  2675  members=[67, 89, 115, 131, 151, 163, 187, 205]...
+  length   6  min=    85  max=   515  members=[85, 257, 367, 403, 451, 515]
+  length   6  min=   107  max=  1055  members=[107, 145, 325, 347, 617, 1055]
+  length   6  min=   113  max=   563  members=[113, 215, 289, 299, 487, 563]
+  length   6  min=   121  max=   659  members=[121, 149, 311, 353, 559, 659]
+  length   3  min=   133  max=   623  members=[133, 329, 623]
+  length   3  min=   161  max=   371  members=[161, 343, 371]
+  length   2  min=   185  max=   407  members=[185, 407]
+  length   3  min=   203  max=   455  members=[203, 217, 455]
+
+n = 261:
+  length   9  min=    99  max=  1089  members=[99, 279, 423, 441, 477, 549, 639, 765]...
+
+n = 263:
+  length  47  min=     7  max=  1399  members=[7, 29, 65, 67, 71, 73, 77, 85]...
+  length  21  min=    17  max=  2311  members=[17, 137, 157, 337, 341, 367, 637, 643]...
+  length  21  min=    37  max=  8215  members=[37, 103, 143, 173, 187, 317, 335, 359]...
+
+n = 265:
+  length  14  min=    47  max=   653  members=[47, 107, 139, 143, 161, 187, 197, 203]...
+  length  34  min=    49  max= 26117  members=[49, 103, 287, 563, 799, 977, 1331, 1663]...
+  length  24  min=    67  max= 12857  members=[67, 233, 241, 247, 269, 319, 331, 337]...
+  length  17  min=   515  max=  3785  members=[515, 535, 575, 625, 745, 875, 905, 935]...
+  length   3  min=  1007  max=  2597  members=[1007, 1643, 2597]
+
+n = 267:
+  length   8  min=    51  max=   975  members=[51, 105, 183, 285, 291, 399, 561, 975]
+
+n = 269:
+  length  20  min=    55  max= 10513  members=[55, 115, 217, 307, 497, 595, 1027, 1247]...
+  length  15  min=   139  max=  4681  members=[139, 275, 277, 281, 343, 547, 649, 955]...
+  length  10  min=   179  max=  3133  members=[179, 235, 403, 487, 739, 865, 1243, 1999]...
+  length   5  min=   211  max=  2161  members=[211, 451, 811, 1351, 2161]
+  length  10  min=   223  max=  2545  members=[223, 247, 419, 469, 505, 763, 1279, 1607]...
+  length   5  min=   227  max=  1405  members=[227, 475, 847, 1121, 1405]
+  length   5  min=   251  max=  1249  members=[251, 511, 743, 901, 1249]
+  length   5  min=   259  max=  1513  members=[259, 523, 601, 919, 1513]
+  length   5  min=   283  max=   973  members=[283, 559, 665, 797, 973]
+  length   5  min=   287  max=  1441  members=[287, 491, 565, 871, 1441]
+  length   5  min=   319  max=   925  members=[319, 527, 613, 761, 925]
+  length   5  min=   323  max=  1729  members=[323, 341, 619, 1063, 1729]
+  length   5  min=   331  max=  1081  members=[331, 439, 631, 793, 1081]
+  length   5  min=   347  max=  1117  members=[347, 373, 655, 905, 1117]
+  length   5  min=   367  max=   889  members=[367, 503, 581, 685, 889]
+  length   5  min=   383  max=  1033  members=[383, 421, 599, 709, 1033]
+  length   5  min=   395  max=  1225  members=[395, 437, 493, 727, 1225]
+
+n = 271:
+  length  20  min=    17  max=  1187  members=[17, 25, 43, 91, 97, 161, 173, 199]...
+
+n = 273:
+  length  24  min=     3  max=  5217  members=[3, 87, 141, 165, 267, 435, 471, 489]...
+  length   6  min=    75  max=  1509  members=[75, 249, 255, 519, 915, 1509]
+  length   6  min=   177  max=   465  members=[177, 201, 219, 381, 417, 465]
+  length   2  min=   195  max=   429  members=[195, 429]
+  length  15  min=  2751  max= 38913  members=[2751, 3759, 4263, 5775, 6531, 8799, 9933, 13335]...
+
+n = 275:
+  length  50  min=     1  max=  3127  members=[1, 13, 23, 31, 43, 67, 79, 101]...
+  length   4  min=     5  max=   355  members=[5, 145, 335, 355]
+  length   2  min=    25  max=   175  members=[25, 175]
+  length   2  min=    35  max=    95  members=[35, 95]
+  length   8  min=    77  max=  1507  members=[77, 121, 253, 319, 517, 913, 1199, 1507]
+  length   4  min=   187  max=   451  members=[187, 209, 407, 451]
+  length  16  min=   205  max=  4135  members=[205, 305, 445, 455, 515, 595, 805, 1345]...
+  length   8  min=   325  max=  1975  members=[325, 625, 725, 775, 875, 1075, 1225, 1975]
+  length   3  min=  1045  max=  2695  members=[1045, 1705, 2695]
+
+n = 277:
+  length  63  min=    13  max=  7889  members=[13, 79, 83, 107, 131, 151, 157, 179]...
+
+n = 279:
+  length  12  min=   117  max=  1179  members=[117, 153, 261, 315, 369, 477, 531, 603]...
+
+n = 281:
+  length   8  min=     1  max=  1501  members=[1, 71, 247, 299, 511, 589, 907, 1501]
+  length   4  min=    17  max=   269  members=[17, 83, 265, 269]
+  length   4  min=    19  max=   197  members=[19, 109, 169, 197]
+  length   4  min=    25  max=   173  members=[25, 89, 137, 173]
+  length   4  min=    37  max=   301  members=[37, 49, 107, 301]
+  length   4  min=    41  max=   125  members=[41, 73, 101, 125]
+  length  64  min=   287  max=175165  members=[287, 289, 335, 353, 377, 409, 563, 571]...
+
+n = 283:
+  length   6  min=     5  max=  1175  members=[5, 119, 149, 365, 689, 1175]
+  length  51  min=    53  max= 12299  members=[53, 101, 139, 175, 221, 293, 473, 581]...
+
+n = 285:
+  length  36  min=     3  max=  9057  members=[3, 39, 111, 147, 183, 201, 303, 309]...
+  length   5  min=    51  max=   849  members=[51, 177, 219, 471, 849]
+  length   5  min=    69  max=   633  members=[69, 123, 273, 327, 633]
+  length   5  min=    75  max=   525  members=[75, 105, 255, 465, 525]
+  length   3  min=  1083  max=  2793  members=[1083, 1767, 2793]
+
+n = 287:
+  length  12  min=     5  max=  1387  members=[5, 11, 139, 151, 185, 421, 457, 653]...
+  length   8  min=     7  max=  1099  members=[7, 77, 133, 259, 329, 343, 637, 1099]
+  length  12  min=    31  max=   367  members=[31, 61, 67, 83, 95, 103, 143, 149]...
+  length  14  min=   121  max=  6031  members=[121, 227, 325, 545, 631, 961, 1115, 1391]...
+  length  14  min=   169  max=  3691  members=[169, 313, 355, 397, 613, 739, 869, 1063]...
+  length  14  min=   193  max=  2143  members=[193, 419, 433, 463, 473, 535, 793, 853]...
+  length   2  min=   205  max=   451  members=[205, 451]
+  length  14  min=   229  max=  3439  members=[229, 437, 449, 487, 503, 515, 575, 671]...
+
+n = 289:
+  length  14  min=     1  max=  2837  members=[1, 73, 127, 245, 275, 335, 557, 647]...
+  length  14  min=    13  max=   677  members=[13, 41, 103, 115, 145, 155, 181, 299]...
+  length   2  min=    17  max=    85  members=[17, 85]
+  length  18  min=   391  max=  3077  members=[391, 425, 527, 595, 731, 935, 1003, 1037]...
+
+n = 291:
+  length   6  min=     3  max=   339  members=[3, 75, 129, 159, 327, 339]
+  length   3  min=    39  max=   111  members=[39, 51, 111]
+
+n = 293:
+  length  17  min=    11  max=  1081  members=[11, 17, 43, 79, 113, 163, 211, 221]...
+
+n = 295:
+  length  11  min=     5  max=   695  members=[5, 65, 95, 115, 145, 155, 245, 365]...
+  length  18  min=   281  max=  6683  members=[281, 569, 1001, 1649, 1981, 2413, 2543, 2621]...
+  length  12  min=   601  max=  9911  members=[601, 713, 1049, 1217, 1721, 1973, 2729, 3107]...
+  length   6  min=   665  max=  6995  members=[665, 1145, 1865, 2945, 4565, 6995]
+  length  12  min=   737  max=  7763  members=[737, 797, 1081, 1253, 1343, 1769, 2027, 2801]...
+  length   6  min=   761  max=  5051  members=[761, 1289, 1931, 2081, 3269, 5051]
+  length   6  min=   889  max=  5699  members=[889, 1087, 1481, 2369, 3701, 5699]
+  length   6  min=   905  max=  3755  members=[905, 1445, 1505, 2315, 2405, 3755]
+  length   3  min=  1121  max=  2891  members=[1121, 1829, 2891]
+
+n = 297:
+  length   2  min=    27  max=   189  members=[27, 189]
+  length   8  min=   351  max=  2133  members=[351, 675, 783, 837, 945, 1161, 1323, 2133]
+
+n = 299:
+  length  16  min=     5  max=   727  members=[5, 7, 109, 155, 157, 191, 199, 217]...
+  length   8  min=    19  max=   367  members=[19, 89, 103, 145, 175, 283, 287, 367]
+  length   2  min=    65  max=   247  members=[65, 247]
+  length   2  min=    91  max=   143  members=[91, 143]
+  length  21  min=   197  max=  5371  members=[197, 445, 553, 809, 817, 821, 979, 1097]...
+  length  26  min=   533  max= 21463  members=[533, 611, 637, 715, 949, 1105, 1573, 1807]...
+
+n = 301:
+  length   3  min=     7  max=   161  members=[7, 49, 161]
+  length  12  min=    19  max=  2129  members=[19, 29, 37, 97, 103, 179, 209, 305]...
+  length  60  min=    67  max= 31289  members=[67, 71, 83, 89, 137, 251, 253, 257]...
+  length   2  min=   215  max=   473  members=[215, 473]
+
+n = 303:
+  length   6  min=    21  max=   795  members=[21, 183, 213, 429, 471, 795]
+  length   6  min=    33  max=   831  members=[33, 75, 201, 453, 699, 831]
+  length   3  min=    57  max=   507  members=[57, 237, 507]
+  length   3  min=    69  max=   267  members=[69, 255, 267]
+  length   3  min=    87  max=   363  members=[87, 141, 363]
+  length   3  min=    93  max=   291  members=[93, 147, 291]
+  length   3  min=   111  max=   195  members=[111, 159, 195]
+
+n = 305:
+  length  16  min=     7  max=  1189  members=[7, 121, 161, 163, 167, 187, 197, 359]...
+  length  16  min=    11  max=   997  members=[11, 67, 103, 133, 169, 203, 253, 307]...
+  length  16  min=    13  max=  3781  members=[13, 37, 43, 91, 217, 239, 289, 293]...
+  length   3  min=  1159  max=  2989  members=[1159, 1891, 2989]
+
+n = 307:
+  length   9  min=     5  max=  1223  members=[5, 161, 373, 395, 497, 713, 751, 899]...
+  length   9  min=    17  max=  1583  members=[17, 79, 179, 211, 235, 253, 533, 953]...
+  length   9  min=    41  max=   791  members=[41, 83, 119, 139, 181, 215, 335, 425]...
+  length  19  min=   137  max= 17351  members=[137, 173, 359, 413, 773, 1313, 1669, 2123]...
+  length  19  min=   205  max= 12815  members=[205, 325, 461, 641, 845, 913, 985, 991]...
+  length  19  min=   293  max=  3527  members=[293, 433, 593, 679, 721, 803, 829, 859]...
+  length  48  min=   353  max=201455  members=[353, 589, 683, 839, 1037, 1181, 1709, 1925]...
+
+n = 309:
+  length   8  min=    15  max=   537  members=[15, 39, 105, 177, 213, 237, 255, 537]
+  length  22  min=    69  max=  1077  members=[69, 87, 93, 129, 147, 159, 285, 291]...
+
+n = 311:
+  length  31  min=    13  max=  6979  members=[13, 35, 83, 125, 175, 209, 329, 335]...
+  length  31  min=    29  max=  2443  members=[29, 31, 77, 101, 199, 227, 233, 271]...
+
+n = 313:
+  length   3  min=     5  max=   109  members=[5, 41, 109]
+  length   3  min=    11  max=   173  members=[11, 13, 173]
+  length 115  min=    35  max= 75017  members=[35, 71, 83, 85, 115, 161, 199, 209]...
+  length  49  min=    47  max=  7949  members=[47, 67, 175, 179, 227, 239, 251, 257]...
+
+n = 315:
+  length   4  min=   117  max=  1143  members=[117, 333, 657, 1143]
+  length   4  min=   153  max=   711  members=[153, 369, 387, 711]
+  length   2  min=   225  max=   495  members=[225, 495]
+  length   3  min=  1197  max=  3087  members=[1197, 1953, 3087]
+
+n = 317:
+  length  32  min=     1  max= 33433  members=[1, 5, 65, 83, 241, 283, 427, 451]...
+  length  23  min=   539  max=  6973  members=[539, 613, 643, 683, 731, 805, 967, 1123]...
+
+n = 319:
+  length   2  min=    29  max=   203  members=[29, 203]
+  length  54  min=    37  max= 14207  members=[37, 71, 83, 95, 119, 133, 151, 169]...
+  length   9  min=   121  max=  1331  members=[121, 341, 517, 539, 583, 671, 781, 935]...
+  length   8  min=   377  max=  2291  members=[377, 725, 841, 899, 1015, 1247, 1421, 2291]
+
+n = 321:
+  length  53  min=     3  max= 36309  members=[3, 15, 33, 51, 105, 129, 159, 165]...
+
+n = 323:
+  length  28  min=     5  max=  1495  members=[5, 49, 169, 205, 235, 257, 319, 415]...
+  length   2  min=    19  max=    95  members=[19, 95]
+  length   5  min=    85  max=   595  members=[85, 119, 289, 527, 595]
+  length  18  min=   437  max=  3439  members=[437, 475, 589, 665, 817, 1045, 1121, 1159]...
+
+n = 325:
+  length  12  min=    83  max=  1529  members=[83, 113, 263, 287, 307, 499, 557, 593]...
+  length   8  min=    91  max=  1781  members=[91, 143, 299, 377, 611, 1079, 1417, 1781]
+  length  12  min=    95  max=  2105  members=[95, 145, 155, 305, 335, 395, 415, 665]...
+  length  12  min=   127  max=  1241  members=[127, 173, 211, 253, 271, 353, 371, 479]...
+  length   4  min=   221  max=   533  members=[221, 247, 481, 533]
+  length   3  min=  1235  max=  3185  members=[1235, 2015, 3185]
+
+n = 327:
+  length  30  min=    57  max= 11319  members=[57, 195, 249, 411, 537, 969, 987, 1617]...
+
+n = 329:
+  length  10  min=     1  max=  1021  members=[1, 53, 61, 83, 271, 289, 299, 571]...
+  length  22  min=    11  max=  1801  members=[11, 31, 41, 109, 113, 167, 181, 185]...
+  length   7  min=    35  max=   301  members=[35, 77, 91, 133, 217, 245, 301]
+  length  16  min=   175  max=  4501  members=[175, 343, 427, 679, 805, 1183, 1379, 1729]...
+  length   2  min=   235  max=   517  members=[235, 517]
+  length  12  min=   295  max=  5557  members=[295, 419, 607, 677, 793, 1075, 1415, 1777]...
+  length  12  min=   407  max=  3397  members=[407, 433, 587, 673, 775, 1045, 1315, 1327]...
+  length   4  min=   455  max=  2317  members=[455, 847, 1435, 2317]
+  length   4  min=   511  max=  1561  members=[511, 931, 1253, 1561]
+  length   4  min=   595  max=  1477  members=[595, 875, 1057, 1477]
+  length   4  min=   623  max=  1813  members=[623, 721, 1099, 1813]
+
+n = 331:
+  length  22  min=    13  max=  1607  members=[13, 17, 71, 79, 97, 113, 161, 167]...
+  length  33  min=    31  max=  8687  members=[31, 53, 55, 115, 169, 245, 397, 419]...
+
+n = 333:
+  length   3  min=   171  max=   801  members=[171, 423, 801]
+  length   3  min=   207  max=   477  members=[207, 441, 477]
+  length   3  min=   261  max=   585  members=[261, 279, 585]
+
+n = 335:
+  length  18  min=     1  max=  1267  members=[1, 59, 149, 169, 203, 377, 391, 421]...
+  length  32  min=    17  max= 22831  members=[17, 37, 193, 223, 251, 283, 317, 457]...
+  length  25  min=    73  max=  2083  members=[73, 83, 109, 127, 179, 191, 217, 227]...
+  length  16  min=    85  max=  6955  members=[85, 115, 295, 305, 425, 625, 805, 1105]...
+  length   3  min=  1273  max=  3283  members=[1273, 2077, 3283]
+
+n = 337:
+  length  16  min=    23  max=  1409  members=[23, 203, 235, 439, 467, 473, 475, 521]...
+  length  16  min=    25  max=  2285  members=[25, 103, 287, 323, 421, 449, 599, 611]...
+  length   8  min=    47  max=  4037  members=[47, 239, 389, 527, 959, 1607, 2579, 4037]
+  length  16  min=    59  max=  5009  members=[59, 73, 139, 257, 277, 367, 377, 517]...
+  length   8  min=    91  max=  1877  members=[91, 305, 313, 319, 373, 647, 1139, 1877]
+  length   8  min=   107  max=  1733  members=[107, 173, 329, 331, 583, 665, 1043, 1733]
+  length   8  min=   209  max=   593  members=[209, 241, 265, 283, 445, 481, 529, 593]
+  length   8  min=   227  max=   557  members=[227, 233, 251, 259, 493, 509, 545, 557]
+
+n = 339:
+  length  12  min=     3  max=  4143  members=[3, 75, 87, 141, 381, 399, 741, 1281]...
+
+n = 341:
+  length   2  min=    31  max=   217  members=[31, 217]
+  length  12  min=   143  max=  1441  members=[143, 187, 319, 385, 451, 583, 649, 737]...
+  length   8  min=   403  max=  2449  members=[403, 775, 899, 961, 1085, 1333, 1519, 2449]
+  length  30  min=  1003  max=  9865  members=[1003, 1043, 1159, 1223, 1277, 1367, 1517, 1589]...
+
+n = 343:
+  length  16  min=    13  max=   947  members=[13, 23, 59, 65, 103, 131, 163, 191]...
+  length  22  min=   175  max=  9863  members=[175, 217, 497, 553, 623, 917, 1001, 1547]...
+  length  22  min=   221  max= 10019  members=[221, 433, 463, 475, 503, 569, 821, 1025]...
+  length   2  min=   245  max=   539  members=[245, 539]
+
+n = 345:
+  length  13  min=    39  max=  4029  members=[39, 93, 147, 231, 381, 393, 519, 669]...
+  length  18  min=    51  max=  3741  members=[51, 249, 273, 291, 429, 543, 609, 663]...
+  length   2  min=    75  max=   285  members=[75, 285]
+  length   2  min=   105  max=   165  members=[105, 165]
+  length  26  min=   615  max= 24765  members=[615, 705, 735, 825, 1095, 1275, 1815, 2085]...
+  length   3  min=  1311  max=  3381  members=[1311, 2139, 3381]
+
+n = 347:
+  length  83  min=     5  max= 18967  members=[5, 11, 43, 73, 79, 95, 97, 113]...
+  length  30  min=     7  max= 20551  members=[7, 13, 23, 193, 217, 461, 463, 499]...
+
+n = 349:
+  length  29  min=    11  max=  4781  members=[11, 103, 119, 167, 191, 203, 329, 353]...
+  length  58  min=    31  max=  2849  members=[31, 49, 77, 89, 115, 125, 139, 145]...
+
+n = 351:
+  length  15  min=  3537  max= 50031  members=[3537, 4833, 5481, 7425, 8397, 11313, 12771, 17145]...
+
+n = 353:
+  length  28  min=     1  max=  1057  members=[1, 29, 37, 55, 61, 67, 83, 89]...
+  length  32  min=   167  max= 13669  members=[167, 283, 307, 427, 491, 539, 601, 637]...
+  length  16  min=   191  max=  2929  members=[191, 463, 839, 871, 901, 1001, 1217, 1435]...
+  length  16  min=   265  max=  8113  members=[265, 275, 287, 589, 607, 1087, 1807, 2359]...
+  length  16  min=   319  max=  6817  members=[319, 371, 377, 385, 655, 733, 1159, 1915]...
+
+n = 355:
+  length   3  min=     1  max=   223  members=[1, 179, 223]
+  length   3  min=     7  max=    47  members=[7, 31, 47]
+  length  20  min=    49  max=  2687  members=[49, 109, 143, 251, 263, 277, 341, 463]...
+  length   5  min=   145  max=   755  members=[145, 385, 395, 655, 755]
+  length   5  min=   155  max=  1535  members=[155, 205, 485, 905, 1535]
+  length   3  min=  1349  max=  3479  members=[1349, 2201, 3479]
+
+n = 357:
+  length  42  min=     3  max= 19569  members=[3, 183, 411, 429, 453, 795, 1371, 1929]...
+  length   2  min=    15  max=   201  members=[15, 201]
+  length   2  min=    21  max=   105  members=[21, 105]
+  length   2  min=    33  max=    57  members=[33, 57]
+  length  18  min=    69  max=  1065  members=[69, 87, 111, 141, 165, 195, 213, 249]...
+  length   2  min=   255  max=   561  members=[255, 561]
+  length  14  min=   375  max=  4665  members=[375, 381, 519, 573, 645, 741, 807, 897]...
+  length  18  min=   483  max=  3801  members=[483, 525, 651, 735, 903, 1155, 1239, 1281]...
+
+n = 359:
+  length  16  min=   109  max=  5959  members=[109, 175, 221, 343, 347, 473, 511, 889]...
+  length   8  min=   113  max=  2935  members=[113, 349, 617, 703, 1105, 1837, 2291, 2935]
+  length   8  min=   121  max=  2071  members=[121, 361, 661, 721, 1171, 1261, 1643, 2071]
+  length   8  min=   145  max=  1783  members=[145, 397, 593, 671, 775, 1069, 1427, 1783]
+  length   8  min=   157  max=  1555  members=[157, 401, 415, 781, 917, 1103, 1351, 1555]
+  length   8  min=   169  max=  1915  members=[169, 331, 433, 763, 829, 1157, 1423, 1915]
+  length   8  min=   191  max=  1639  members=[191, 233, 529, 899, 973, 1079, 1319, 1639]
+  length   8  min=   209  max=  1207  members=[209, 337, 493, 685, 779, 919, 995, 1207]
+  length   8  min=   229  max=  2323  members=[229, 241, 523, 541, 833, 991, 1429, 2323]
+  length   8  min=   263  max=  1591  members=[263, 287, 305, 637, 941, 1135, 1283, 1591]
+  length   8  min=   269  max=  1315  members=[269, 385, 485, 527, 583, 757, 907, 1315]
+
+n = 361:
+  length  25  min=     5  max=  2765  members=[5, 31, 47, 127, 227, 251, 371, 391]...
+  length  10  min=    17  max=  1493  members=[17, 103, 335, 463, 497, 605, 683, 875]...
+  length  10  min=    35  max=  1037  members=[35, 217, 233, 253, 265, 289, 307, 571]...
+  length  10  min=    53  max=  2141  members=[53, 65, 139, 191, 389, 467, 751, 881]...
+  length  10  min=    59  max=  1529  members=[59, 73, 145, 199, 269, 479, 509, 899]...
+  length   5  min=    79  max=   629  members=[79, 281, 299, 301, 629]
+  length   5  min=    95  max=   665  members=[95, 133, 323, 589, 665]
+  length   5  min=    97  max=   425  members=[97, 163, 397, 409, 425]
+  length   5  min=   113  max=   845  members=[113, 175, 181, 443, 845]
+  length   5  min=   131  max=   377  members=[131, 185, 229, 373, 377]
+  length   5  min=   137  max=   533  members=[137, 193, 235, 245, 533]
+
+n = 363:
+  length  18  min=    15  max=  2391  members=[15, 39, 51, 87, 93, 111, 129, 147]...
+  length   2  min=    33  max=   231  members=[33, 231]
+  length  46  min=    57  max=  3291  members=[57, 69, 105, 159, 195, 237, 267, 285]...
+  length   8  min=   429  max=  2607  members=[429, 825, 957, 1023, 1155, 1419, 1617, 2607]
+
+n = 365:
+  length   4  min=    11  max=   481  members=[11, 113, 199, 481]
+  length   4  min=    13  max=   433  members=[13, 101, 167, 433]
+  length   4  min=    25  max=   265  members=[25, 55, 145, 265]
+  length   4  min=    41  max=   137  members=[41, 61, 97, 137]
+  length  32  min=    95  max= 10525  members=[95, 115, 125, 185, 205, 245, 275, 325]...
+  length  56  min=   127  max= 16129  members=[127, 217, 371, 373, 457, 527, 581, 653]...
+  length   8  min=   235  max=  1225  members=[235, 415, 505, 535, 695, 805, 985, 1225]
+  length   3  min=  1387  max=  3577  members=[1387, 2263, 3577]
+
+n = 367:
+  length  62  min=     7  max=  2495  members=[7, 29, 31, 43, 47, 89, 95, 97]...
+
+n = 369:
+  length   8  min=     9  max=  1413  members=[9, 99, 171, 333, 423, 441, 819, 1413]
+
+n = 371:
+  length 114  min=    25  max=  7015  members=[25, 43, 55, 59, 61, 65, 67, 125]...
+  length   2  min=   265  max=   583  members=[265, 583]
+  length  17  min=   721  max=  5299  members=[721, 749, 805, 875, 1043, 1225, 1267, 1309]...
+
+n = 373:
+  length  41  min=    23  max=  2993  members=[23, 37, 55, 109, 121, 175, 215, 221]...
+  length  41  min=    31  max=111857  members=[31, 41, 47, 49, 65, 67, 71, 137]...
+
+n = 375:
+  length   8  min=   105  max=  2055  members=[105, 165, 345, 435, 705, 1245, 1635, 2055]
+  length  19  min=   141  max= 12747  members=[141, 393, 399, 777, 1353, 1389, 1797, 1857]...
+  length   4  min=   255  max=   615  members=[255, 285, 555, 615]
+  length  19  min=   429  max=  3783  members=[429, 573, 717, 753, 831, 879, 1041, 1047]...
+  length   3  min=  1425  max=  3675  members=[1425, 2325, 3675]
+
+n = 377:
+  length  64  min=    19  max=207145  members=[19, 35, 37, 61, 127, 175, 217, 233]...
+  length  20  min=    53  max=  2077  members=[53, 67, 79, 85, 101, 157, 265, 289]...
+  length   9  min=   143  max=  1573  members=[143, 403, 611, 637, 689, 793, 923, 1105]...
+
+n = 379:
+  length  14  min=    35  max=  2159  members=[35, 121, 371, 373, 397, 749, 785, 857]...
+  length  14  min=    41  max=  4967  members=[41, 251, 283, 307, 311, 325, 677, 703]...
+  length  14  min=    61  max=  1163  members=[61, 199, 205, 281, 497, 553, 611, 649]...
+
+n = 381:
+  length  18  min=     3  max=  3993  members=[3, 195, 483, 627, 795, 897, 915, 933]...
+  length  18  min=   123  max=  1401  members=[123, 141, 165, 201, 219, 231, 249, 375]...
+
+n = 383:
+  length  21  min=    41  max=  2047  members=[41, 91, 97, 115, 131, 253, 325, 337]...
+  length  43  min=    67  max= 24403  members=[67, 73, 133, 149, 289, 295, 301, 317]...
+
+n = 385:
+  length  16  min=     5  max=  2225  members=[5, 25, 115, 185, 235, 355, 365, 475]...
+  length   4  min=     7  max=   497  members=[7, 203, 469, 497]
+  length   6  min=    17  max=   437  members=[17, 53, 89, 109, 163, 437]
+  length  20  min=    23  max=  4541  members=[23, 31, 227, 239, 533, 551, 853, 1019]...
+  length   2  min=    35  max=   245  members=[35, 245]
+  length   2  min=    49  max=   133  members=[49, 133]
+  length  48  min=   107  max= 12737  members=[107, 157, 353, 361, 367, 383, 467, 709]...
+  length   4  min=   143  max=  1397  members=[143, 407, 803, 1397]
+  length   4  min=   187  max=   869  members=[187, 451, 473, 869]
+  length   2  min=   275  max=   605  members=[275, 605]
+  length  16  min=   287  max=  5789  members=[287, 427, 623, 637, 721, 833, 1127, 1883]...
+  length   8  min=   455  max=  2765  members=[455, 875, 1015, 1085, 1225, 1505, 1715, 2765]
+  length   3  min=  1463  max=  3773  members=[1463, 2387, 3773]
+
+n = 387:
+  length   3  min=     9  max=   207  members=[9, 63, 207]
+
+n = 389:
+  length  13  min=    17  max=   853  members=[17, 55, 163, 181, 233, 277, 305, 325]...
+  length  49  min=    37  max= 27409  members=[37, 125, 191, 229, 265, 269, 299, 481]...
+  length  49  min=    59  max= 41893  members=[59, 139, 185, 187, 241, 283, 403, 475]...
+
+n = 391:
+  length   8  min=    13  max=  1175  members=[13, 73, 215, 259, 305, 653, 979, 1175]
+  length   2  min=    23  max=   115  members=[23, 115]
+  length   8  min=    29  max=   611  members=[29, 101, 139, 179, 239, 277, 347, 611]
+  length   8  min=    37  max=   503  members=[37, 67, 143, 205, 227, 251, 475, 503]
+  length  34  min=    77  max=  5147  members=[77, 173, 185, 209, 311, 331, 427, 439]...
+  length   2  min=    85  max=   323  members=[85, 323]
+  length   2  min=   119  max=   187  members=[119, 187]
+  length  18  min=   529  max=  4163  members=[529, 575, 713, 805, 989, 1265, 1357, 1403]...
+  length  26  min=   697  max= 28067  members=[697, 799, 833, 935, 1241, 1445, 2057, 2363]...
+
+n = 393:
+  length  13  min=    39  max=  1389  members=[39, 255, 285, 399, 579, 771, 795, 897]...
+  length  13  min=    51  max=  1497  members=[51, 273, 303, 447, 465, 489, 507, 651]...
+  length  26  min=    69  max=  6645  members=[69, 75, 111, 165, 177, 231, 237, 309]...
+
+n = 395:
+  length  20  min=     5  max=  2935  members=[5, 65, 205, 215, 265, 295, 355, 365]...
+  length  10  min=    17  max=  1627  members=[17, 133, 223, 397, 793, 953, 1139, 1319]...
+  length  10  min=    29  max=  1927  members=[29, 193, 241, 259, 293, 487, 559, 637]...
+  length  20  min=    35  max=  2635  members=[35, 55, 85, 115, 125, 175, 185, 325]...
+  length  10  min=    47  max=  2359  members=[47, 67, 149, 421, 449, 467, 829, 871]...
+  length  10  min=    83  max=  1639  members=[83, 107, 161, 179, 233, 439, 509, 547]...
+  length  10  min=   139  max=   847  members=[139, 157, 187, 203, 239, 251, 287, 367]...
+  length   3  min=  1501  max=  3871  members=[1501, 2449, 3871]
+
+n = 397:
+  length  54  min=    11  max= 22193  members=[11, 79, 115, 149, 211, 215, 221, 245]...
+
+n = 399:
+  length  18  min=    33  max=  1707  members=[33, 213, 249, 345, 435, 447, 489, 519]...
+  length   5  min=   105  max=   735  members=[105, 147, 357, 651, 735]
+  length  24  min=   177  max= 13263  members=[177, 339, 375, 381, 465, 771, 867, 897]...
+  length   2  min=   285  max=   627  members=[285, 627]
+
+n = 401:
+  length  88  min=     5  max=  8101  members=[5, 13, 35, 41, 53, 55, 71, 85]...
+
+n = 403:
+  length  84  min=     5  max=288551  members=[5, 79, 97, 113, 121, 167, 209, 233]...
+  length  12  min=   169  max=  1703  members=[169, 221, 377, 455, 533, 689, 767, 871]...
+
+n = 405:
+  length   3  min=  1539  max=  3969  members=[1539, 2511, 3969]
+  length   3  min=  1863  max=  2997  members=[1863, 2349, 2997]
+
+n = 407:
+  length  17  min=     1  max=  1051  members=[1, 17, 25, 167, 205, 227, 229, 241]...
+  length  45  min=    31  max=  6883  members=[31, 85, 91, 95, 125, 145, 173, 175]...
+  length   2  min=    37  max=   259  members=[37, 259]
+  length  43  min=    71  max=183787  members=[71, 109, 155, 367, 377, 769, 1129, 1357]...
+  length  15  min=   119  max=  2995  members=[119, 191, 245, 265, 271, 305, 499, 571]...
+  length   3  min=   209  max=   979  members=[209, 517, 979]
+  length   3  min=   253  max=   583  members=[253, 539, 583]
+  length   3  min=   319  max=   715  members=[319, 341, 715]
+  length   8  min=   481  max=  2923  members=[481, 925, 1073, 1147, 1295, 1591, 1813, 2923]
+
+n = 409:
+  length  23  min=    19  max=  3605  members=[19, 43, 155, 175, 215, 233, 269, 277]...
+  length  23  min=    23  max=  7853  members=[23, 83, 91, 109, 179, 239, 329, 341]...
+  length  22  min=   371  max=  7709  members=[371, 607, 673, 755, 761, 931, 1105, 1115]...
+
+n = 411:
+  length   4  min=     3  max=   375  members=[3, 105, 363, 375]
+  length  40  min=   123  max= 12711  members=[123, 195, 249, 291, 309, 321, 357, 519]...
+  length  18  min=  1509  max=319863  members=[1509, 1875, 2469, 3909, 6069, 9309, 14169, 16197]...
+
+n = 413:
+  length  40  min=     5  max=  6445  members=[5, 11, 55, 97, 107, 109, 121, 185]...
+  length  11  min=     7  max=   973  members=[7, 91, 133, 161, 203, 217, 343, 511]...
+  length   2  min=   295  max=   649  members=[295, 649]
+  length   6  min=   931  max=  9793  members=[931, 1603, 2611, 4123, 6391, 9793]
+  length   6  min=  1267  max=  5257  members=[1267, 2023, 2107, 3241, 3367, 5257]
+
+n = 415:
+  length  68  min=    23  max=  5327  members=[23, 37, 41, 53, 59, 79, 107, 113]...
+  length  14  min=   325  max= 10835  members=[325, 625, 695, 1145, 1595, 1925, 2425, 3095]...
+  length   7  min=   545  max=  6875  members=[545, 1025, 1315, 1745, 2825, 4445, 6875]
+  length   7  min=   785  max=  3635  members=[785, 1165, 1385, 1415, 1955, 2285, 3635]
+  length   3  min=  1577  max=  4067  members=[1577, 2573, 4067]
+
+n = 417:
+  length  74  min=    33  max= 12705  members=[33, 57, 129, 147, 165, 201, 213, 255]...
+
+n = 419:
+  length  98  min=    41  max=  6115  members=[41, 71, 77, 79, 109, 151, 179, 181]...
+
+n = 421:
+  length  23  min=    37  max=  1793  members=[37, 53, 101, 107, 133, 143, 145, 181]...
+  length  47  min=    67  max= 36425  members=[67, 103, 149, 187, 217, 223, 251, 257]...
+
+n = 423:
+  length   7  min=    45  max=   387  members=[45, 99, 117, 171, 279, 315, 387]
+  length  16  min=   225  max=  5787  members=[225, 441, 549, 873, 1035, 1521, 1773, 2223]...
+  length   4  min=   585  max=  2979  members=[585, 1089, 1845, 2979]
+  length   4  min=   657  max=  2007  members=[657, 1197, 1611, 2007]
+  length   4  min=   765  max=  1899  members=[765, 1125, 1359, 1899]
+  length   4  min=   801  max=  2331  members=[801, 927, 1413, 2331]
+  length   4  min=   909  max=  1575  members=[909, 1071, 1287, 1575]
+
+n = 425:
+  length  16  min=    23  max=  8701  members=[23, 91, 247, 349, 583, 829, 1087, 1843]...
+  length   2  min=    25  max=   125  members=[25, 125]
+  length  56  min=    35  max= 18745  members=[35, 115, 265, 305, 335, 355, 385, 395]...
+  length  16  min=    73  max=  1849  members=[73, 161, 227, 283, 479, 497, 521, 553]...
+  length  16  min=    83  max=  2221  members=[83, 191, 299, 301, 337, 359, 443, 499]...
+  length   8  min=   119  max=  2329  members=[119, 187, 391, 493, 799, 1411, 1853, 2329]
+  length  16  min=   137  max=  1897  members=[137, 193, 209, 251, 263, 373, 427, 523]...
+  length   4  min=   289  max=   697  members=[289, 323, 629, 697]
+  length  18  min=   575  max=  4525  members=[575, 625, 775, 875, 1075, 1375, 1475, 1525]...
+  length   3  min=  1615  max=  4165  members=[1615, 2635, 4165]
+
+n = 427:
+  length  60  min=    67  max=  5867  members=[67, 73, 107, 121, 137, 143, 145, 149]...
+  length   2  min=   305  max=   671  members=[305, 671]
+
+n = 429:
+  length  80  min=    21  max=132753  members=[21, 123, 147, 399, 435, 447, 483, 501]...
+  length   2  min=    39  max=   273  members=[39, 273]
+  length   7  min=    51  max=  2001  members=[51, 129, 201, 291, 651, 1191, 2001]
+  length   7  min=    87  max=   489  members=[87, 183, 237, 285, 321, 345, 489]
+  length   8  min=   507  max=  3081  members=[507, 975, 1131, 1209, 1365, 1677, 1911, 3081]
+  length  15  min=  4323  max= 61149  members=[4323, 5907, 6699, 9075, 10263, 13827, 15609, 20955]...
+
+n = 431:
+  length  12  min=     7  max=  2323  members=[7, 113, 385, 557, 599, 655, 793, 925]...
+  length  31  min=    19  max= 21283  members=[19, 61, 169, 301, 307, 469, 545, 583]...
+  length   8  min=    25  max=  1087  members=[25, 253, 277, 581, 595, 631, 923, 1087]
+  length  16  min=    35  max=  2671  members=[35, 43, 67, 79, 167, 233, 565, 905]...
+  length   8  min=    37  max=  1195  members=[37, 251, 271, 311, 341, 653, 727, 1195]
+  length   8  min=    53  max=  1279  members=[53, 139, 227, 295, 329, 709, 1067, 1279]
+  length   4  min=    65  max=  1243  members=[65, 313, 685, 1243]
+  length   4  min=    73  max=   703  members=[73, 325, 635, 703]
+  length   4  min=    85  max=   763  members=[85, 343, 365, 763]
+  length   4  min=    89  max=   739  members=[89, 331, 349, 739]
+  length   4  min=   101  max=   395  members=[101, 367, 383, 395]
+  length   4  min=   103  max=   955  members=[103, 185, 493, 955]
+  length   4  min=   119  max=   511  members=[119, 197, 491, 511]
+  length   4  min=   121  max=   811  members=[121, 179, 397, 811]
+  length   4  min=   125  max=   523  members=[125, 205, 403, 523]
+  length   4  min=   133  max=   419  members=[133, 211, 415, 419]
+  length   4  min=   143  max=   619  members=[143, 215, 269, 619]
+  length   4  min=   151  max=   547  members=[151, 221, 259, 547]
+  length   4  min=   157  max=   451  members=[157, 223, 275, 451]
+  length   4  min=   175  max=   323  members=[175, 239, 287, 323]
+  length  19  min=   593  max= 44179  members=[593, 647, 719, 815, 943, 1105, 1873, 2371]...
+
+n = 433:
+  length 114  min=    13  max= 46817  members=[13, 49, 59, 145, 167, 199, 203, 217]...
+  length  66  min=    31  max= 18917  members=[31, 55, 65, 113, 149, 151, 157, 193]...
+  length   9  min=    61  max=   373  members=[61, 77, 83, 91, 97, 181, 341, 353]...
+  length  24  min=   799  max= 11393  members=[799, 1279, 1415, 1451, 1561, 1903, 1937, 1991]...
+
+n = 435:
+  length   2  min=     3  max=   111  members=[3, 111]
+  length  10  min=    69  max=  1167  members=[69, 123, 201, 249, 321, 519, 591, 633]...
+  length  18  min=   141  max=  3939  members=[141, 231, 339, 363, 381, 429, 759, 789]...
+  length   9  min=   165  max=  1815  members=[165, 465, 705, 735, 795, 915, 1065, 1275]...
+  length   3  min=  1653  max=  4263  members=[1653, 2697, 4263]
+
+n = 437:
+  length  55  min=     1  max=  4261  members=[1, 25, 31, 55, 77, 101, 121, 167]...
+  length  12  min=     5  max=  1561  members=[5, 91, 97, 113, 355, 451, 559, 751]...
+  length   2  min=    95  max=   361  members=[95, 361]
+  length   5  min=   115  max=   805  members=[115, 161, 391, 713, 805]
+  length   2  min=   133  max=   209  members=[133, 209]
+  length  19  min=   587  max= 49945  members=[587, 1099, 1867, 3019, 4747, 7339, 11099, 11227]...
+  length  26  min=   779  max= 31369  members=[779, 893, 931, 1045, 1387, 1615, 2299, 2641]...
+
+n = 439:
+  length  36  min=     5  max= 12359  members=[5, 17, 35, 79, 121, 169, 227, 245]...
+  length   6  min=    41  max=  1991  members=[41, 281, 641, 1181, 1603, 1991]
+  length  12  min=    61  max=  1415  members=[61, 179, 247, 295, 311, 331, 343, 367]...
+  length   6  min=    65  max=   695  members=[65, 317, 547, 583, 631, 695]
+  length   6  min=    85  max=  1667  members=[85, 185, 347, 497, 965, 1667]
+  length  12  min=    95  max=  2819  members=[95, 107, 139, 181, 239, 289, 491, 653]...
+  length   6  min=   125  max=   851  members=[125, 187, 407, 415, 421, 851]
+  length   6  min=   149  max=   551  members=[149, 221, 251, 443, 523, 551]
+  length   6  min=   151  max=   659  members=[151, 223, 277, 293, 635, 659]
+
+n = 441:
+  length  22  min=   225  max= 12681  members=[225, 279, 639, 711, 801, 1179, 1287, 1989]...
+  length   2  min=   315  max=   693  members=[315, 693]
+
+n = 443:
+  length  14  min=    13  max=  1003  members=[13, 137, 217, 241, 379, 395, 407, 427]...
+  length  14  min=    19  max=  1399  members=[19, 55, 125, 145, 409, 439, 553, 737]...
+  length   7  min=    41  max=   751  members=[41, 283, 323, 337, 353, 727, 751]
+  length   7  min=    59  max=  1111  members=[59, 155, 227, 281, 593, 643, 1111]
+  length   7  min=    91  max=  1879  members=[91, 95, 179, 245, 589, 1105, 1879]
+
+n = 445:
+  length   8  min=     1  max=   881  members=[1, 7, 143, 193, 233, 437, 439, 881]
+  length  56  min=    29  max=  4577  members=[29, 131, 133, 161, 211, 263, 281, 287]...
+  length   8  min=    85  max=  1625  members=[85, 175, 305, 475, 485, 665, 935, 1625]
+  length   3  min=  1691  max=  4361  members=[1691, 2759, 4361]
+
+n = 447:
+  length  33  min=    57  max=117651  members=[57, 165, 291, 309, 465, 471, 627, 687]...
+
+n = 449:
+  length  22  min=    19  max=  3277  members=[19, 53, 65, 115, 133, 151, 157, 161]...
+
+n = 451:
+  length   8  min=    11  max=  1727  members=[11, 121, 209, 407, 517, 539, 1001, 1727]
+  length   2  min=    41  max=   287  members=[41, 287]
+  length  40  min=    43  max= 17279  members=[43, 59, 79, 131, 145, 157, 169, 199]...
+  length   8  min=   533  max=  3239  members=[533, 1025, 1189, 1271, 1435, 1763, 2009, 3239]
+
+n = 453:
+  length  40  min=   123  max= 11265  members=[123, 177, 285, 321, 327, 411, 609, 651]...
+  length  10  min=   339  max=  2949  members=[339, 555, 735, 753, 1059, 1329, 1815, 1857]...
+
+n = 455:
+  length  24  min=     5  max=  8695  members=[5, 145, 235, 275, 445, 725, 785, 815]...
+  length  48  min=    17  max=282883  members=[17, 211, 253, 557, 569, 607, 797, 911]...
+  length  24  min=    31  max=  5251  members=[31, 89, 137, 179, 361, 433, 457, 769]...
+  length  24  min=    43  max= 10291  members=[43, 53, 73, 307, 337, 383, 401, 733]...
+  length  12  min=   103  max=  4243  members=[103, 191, 257, 473, 479, 487, 613, 937]...
+  length   6  min=   125  max=  2515  members=[125, 415, 425, 865, 1525, 2515]
+  length  12  min=   133  max=  2947  members=[133, 203, 217, 427, 469, 553, 581, 931]...
+  length   4  min=   169  max=  1651  members=[169, 481, 949, 1651]
+  length   4  min=   221  max=  1027  members=[221, 533, 559, 1027]
+  length   6  min=   295  max=   775  members=[295, 335, 365, 635, 695, 775]
+  length   2  min=   325  max=   715  members=[325, 715]
+  length   3  min=  1729  max=  4459  members=[1729, 2821, 4459]
+
+n = 457:
+  length  12  min=    13  max=  1661  members=[13, 31, 85, 89, 125, 181, 275, 595]...
+  length  33  min=    49  max=  3917  members=[49, 65, 119, 143, 151, 163, 233, 289]...
+  length  21  min=   103  max= 42797  members=[103, 383, 503, 803, 983, 1189, 1211, 1433]...
+  length  21  min=   287  max=  6941  members=[287, 613, 659, 665, 815, 959, 1027, 1195]...
+
+n = 459:
+  length   2  min=    27  max=   135  members=[27, 135]
+  length  18  min=   621  max=  4887  members=[621, 675, 837, 945, 1161, 1485, 1593, 1647]...
+
+n = 461:
+  length  17  min=     7  max=  1321  members=[7, 25, 37, 67, 113, 143, 145, 157]...
+
+n = 463:
+  length  72  min=    29  max= 25295  members=[29, 65, 73, 103, 109, 155, 161, 191]...
+
+n = 465:
+  length  18  min=     3  max=  2613  members=[3, 57, 147, 159, 237, 357, 453, 471]...
+  length  12  min=   195  max=  1965  members=[195, 255, 435, 525, 615, 795, 885, 1005]...
+  length   3  min=  1767  max=  4557  members=[1767, 2883, 4557]
+
+n = 467:
+  length  26  min=    71  max= 15571  members=[71, 85, 223, 229, 349, 361, 439, 521]...
+  length  26  min=   107  max=  6823  members=[107, 121, 197, 205, 391, 415, 493, 529]...
+  length  26  min=   125  max=  2131  members=[125, 155, 233, 277, 337, 421, 511, 583]...
+
+n = 469:
+  length  36  min=    31  max=  5897  members=[31, 37, 41, 53, 101, 109, 113, 127]...
+  length  16  min=   119  max=  9737  members=[119, 161, 413, 427, 595, 875, 1127, 1547]...
+  length   2  min=   335  max=   737  members=[335, 737]
+
+n = 471:
+  length  12  min=    39  max=  2535  members=[39, 51, 57, 147, 321, 717, 1101, 1311]...
+
+n = 473:
+  length  84  min=     1  max= 12361  members=[1, 13, 17, 35, 49, 85, 91, 95]...
+  length   3  min=    11  max=   253  members=[11, 77, 253]
+  length   2  min=    43  max=   301  members=[43, 301]
+  length   8  min=   559  max=  3397  members=[559, 1075, 1247, 1333, 1505, 1849, 2107, 3397]
+
+n = 475:
+  length  36  min=     5  max= 15095  members=[5, 65, 185, 245, 305, 335, 505, 515]...
+  length  14  min=    11  max=   887  members=[11, 49, 67, 107, 121, 127, 169, 199]...
+  length  36  min=    29  max=  7787  members=[29, 43, 71, 151, 241, 269, 281, 509]...
+  length   5  min=    85  max=  1415  members=[85, 295, 365, 785, 1415]
+  length   5  min=   115  max=  1055  members=[115, 205, 455, 545, 1055]
+  length   5  min=   125  max=   875  members=[125, 175, 425, 775, 875]
+  length   8  min=   133  max=  2603  members=[133, 209, 437, 551, 893, 1577, 2071, 2603]
+  length   4  min=   323  max=   779  members=[323, 361, 703, 779]
+  length   3  min=  1805  max=  4655  members=[1805, 2945, 4655]
+
+n = 477:
+  length  17  min=   927  max=  6813  members=[927, 963, 1035, 1125, 1341, 1575, 1629, 1683]...
+
+n = 479:
+  length  52  min=     7  max=  6811  members=[7, 55, 109, 121, 125, 139, 161, 163]...
+  length  21  min=    37  max=  1231  members=[37, 79, 127, 179, 215, 229, 235, 281]...
+  length  31  min=    41  max=  8755  members=[41, 301, 319, 353, 359, 389, 613, 691]...
+  length  93  min=    49  max= 26251  members=[49, 73, 77, 173, 175, 193, 245, 247]...
+
+n = 481:
+  length  18  min=    23  max= 10661  members=[23, 191, 275, 305, 349, 527, 653, 821]...
+  length   6  min=    95  max=  3893  members=[95, 383, 815, 1463, 2435, 3893]
+  length  12  min=   113  max=  4865  members=[113, 137, 205, 223, 575, 1103, 1895, 2947]...
+  length  12  min=   119  max=  3569  members=[119, 193, 265, 319, 419, 719, 869, 1109]...
+  length   6  min=   127  max=  2597  members=[127, 431, 517, 887, 1571, 2597]
+  length  12  min=   139  max=  2705  members=[139, 227, 433, 445, 449, 457, 463, 581]...
+  length   6  min=   155  max=  1493  members=[155, 473, 475, 835, 953, 1493]
+  length   6  min=   175  max=  1733  members=[175, 355, 503, 773, 995, 1733]
+  length   6  min=   215  max=  1085  members=[215, 413, 467, 563, 941, 1085]
+  length   6  min=   217  max=  1169  members=[217, 283, 619, 665, 997, 1169]
+  length   6  min=   233  max=  1265  members=[233, 295, 461, 683, 1069, 1265]
+  length   3  min=   247  max=  1157  members=[247, 611, 1157]
+  length   6  min=   281  max=   737  members=[281, 331, 589, 625, 673, 737]
+  length   3  min=   299  max=   689  members=[299, 637, 689]
+  length   6  min=   353  max=   881  members=[353, 385, 409, 427, 781, 881]
+  length   3  min=   377  max=   845  members=[377, 403, 845]
+
+n = 483:
+  length   6  min=    33  max=   543  members=[33, 201, 291, 339, 375, 543]
+  length   6  min=    57  max=   447  members=[57, 129, 183, 327, 435, 447]
+  length  22  min=    75  max=  3891  members=[75, 87, 93, 177, 381, 501, 507, 813]...
+  length   2  min=   105  max=   399  members=[105, 399]
+  length   2  min=   147  max=   231  members=[147, 231]
+  length  16  min=   237  max=  6483  members=[237, 309, 471, 597, 705, 1095, 1137, 1299]...
+  length   2  min=   345  max=   759  members=[345, 759]
+  length  26  min=   861  max= 34671  members=[861, 987, 1029, 1155, 1533, 1785, 2541, 2919]...
+
+n = 485:
+  length   6  min=     5  max=   565  members=[5, 125, 215, 265, 545, 565]
+  length  64  min=     7  max=295813  members=[7, 137, 253, 311, 611, 653, 709, 1159]...
+  length   3  min=    19  max=   649  members=[19, 271, 649]
+  length   3  min=    23  max=   329  members=[23, 277, 329]
+  length   3  min=    29  max=   457  members=[29, 143, 457]
+  length   3  min=    31  max=   289  members=[31, 169, 289]
+  length   3  min=    37  max=   233  members=[37, 149, 233]
+  length   3  min=    47  max=   313  members=[47, 89, 313]
+  length   3  min=    49  max=   361  members=[49, 79, 361]
+  length   3  min=    53  max=   161  members=[53, 121, 161]
+  length   3  min=    65  max=   185  members=[65, 85, 185]
+  length  17  min=    83  max=  1621  members=[83, 139, 179, 281, 367, 439, 451, 511]...
+  length  20  min=   101  max=  1333  members=[101, 119, 151, 197, 229, 241, 269, 293]...
+  length  14  min=   251  max=  3241  members=[251, 319, 331, 619, 721, 739, 1171, 1177]...
+  length  14  min=   259  max=  3169  members=[259, 391, 529, 631, 743, 829, 881, 1013]...
+  length  25  min=   283  max= 14641  members=[283, 593, 629, 667, 971, 1133, 1243, 1349]...
+  length  25  min=   299  max= 16417  members=[299, 691, 779, 871, 877, 1279, 1283, 1411]...
+  length   3  min=  1843  max=  4753  members=[1843, 3007, 4753]
+
+n = 487:
+  length  74  min=    43  max=200171  members=[43, 77, 197, 263, 319, 359, 361, 391]...
+  length  46  min=   103  max= 10691  members=[103, 127, 181, 199, 217, 271, 325, 329]...
+
+n = 489:
+  length  49  min=    33  max= 18789  members=[33, 147, 177, 255, 465, 471, 543, 627]...
+  length  36  min=    51  max=  8745  members=[51, 69, 87, 129, 195, 219, 321, 357]...
+
+n = 491:
+  length  37  min=    11  max= 18031  members=[11, 31, 59, 73, 131, 151, 167, 221]...
+  length  57  min=    49  max= 17191  members=[49, 107, 163, 181, 203, 245, 259, 271]...
+
+n = 493:
+  length  96  min=     1  max= 21053  members=[1, 5, 7, 31, 53, 79, 89, 95]...
+  length   2  min=    29  max=   145  members=[29, 145]
+  length   9  min=   187  max=  2057  members=[187, 527, 799, 833, 901, 1037, 1207, 1445]...
+  length  18  min=   667  max=  5249  members=[667, 725, 899, 1015, 1247, 1595, 1711, 1769]...
+
+n = 495:
+  length   4  min=     9  max=   639  members=[9, 261, 603, 639]
+  length   2  min=    45  max=   315  members=[45, 315]
+  length   2  min=    63  max=   171  members=[63, 171]
+  length  16  min=   369  max=  7443  members=[369, 549, 801, 819, 927, 1071, 1449, 2421]...
+  length   8  min=   585  max=  3555  members=[585, 1125, 1305, 1395, 1575, 1935, 2205, 3555]
+  length   3  min=  1881  max=  4851  members=[1881, 3069, 4851]
+
+n = 497:
+  length  70  min=    13  max= 29293  members=[13, 41, 47, 61, 67, 85, 155, 163]...
+  length  10  min=    79  max=  3877  members=[79, 367, 379, 677, 737, 799, 817, 1447]...
+  length  10  min=    95  max=  1861  members=[95, 391, 551, 569, 593, 625, 835, 1075]...
+  length  20  min=   103  max=  1921  members=[103, 109, 191, 311, 403, 499, 535, 611]...
+  length  10  min=   113  max=  5821  members=[113, 209, 281, 335, 751, 1375, 2245, 2311]...
+  length  10  min=   145  max=  2077  members=[145, 233, 299, 647, 697, 755, 841, 1219]...
+  length   5  min=   203  max=  1057  members=[203, 539, 553, 917, 1057]
+  length   5  min=   217  max=  2149  members=[217, 287, 679, 1267, 2149]
+  length  10  min=   265  max=  1537  members=[265, 323, 337, 377, 407, 541, 733, 859]...
+  length   2  min=   355  max=   781  members=[355, 781]
+
+n = 499:
+  length  19  min=     1  max=  3875  members=[1, 77, 83, 187, 251, 265, 305, 313]...
+  length  19  min=    23  max=  1295  members=[23, 71, 85, 89, 101, 103, 137, 233]...
+  length 109  min=   139  max=444479  members=[139, 155, 157, 193, 229, 241, 247, 253]...
+
+Total distinct nontrivial loops: 961
+n values with at least one loop: 244 / 498
+
+=================================================================
+ANALYSIS 2: Inverse pair necessity check
+IP initial scan: 1..10000,  extended scan: 1..30000
+=================================================================
+
+Nontrivial loops checked:       961
+Touching an inverse pair:       961
+Genuine counterexamples:        0
+RESULT: Every nontrivial loop passes through at least one inverse pair value.
+
+=================================================================
+ANALYSIS 3: Classification of n by loop behaviour
+=================================================================
+
+Total n values in range:        498
+  With loops:                   244
+  Without loops:                254
+
+Even n with loops:              0
+Even n without loops:           249
+
+Odd n (powers of 3) with loops:    0
+Odd n (powers of 3) without loops: 5  [3, 9, 27, 81, 243]
+
+Other odd n with loops:         244
+Other odd n without loops:      0
+
+Conjecture holds in search range (even=no loop, 3^k=no loop, other odd=loop)? True
+
+=================================================================
+CONJUGACY VERIFICATION: f_{3^k}(3^k * x) = 3^k * f_1(x)
+=================================================================
+  k=1, n=3^1=   3: holds for x=1..9999 (odd)? True
+  k=2, n=3^2=   9: holds for x=1..9999 (odd)? True
+  k=3, n=3^3=  27: holds for x=1..9999 (odd)? True
+  k=4, n=3^4=  81: holds for x=1..9999 (odd)? True
+  k=5, n=3^5= 243: holds for x=1..9999 (odd)? True
