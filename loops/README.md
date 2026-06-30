@@ -3,7 +3,6 @@
 Computational companion to:
 
 > **Loop Structure of Collatz-Type Functions 3x+n: A Conjugacy Theorem and Powers of Three**
-> Michael M. Ross, 2026
 
 ---
 
