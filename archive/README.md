@@ -1,81 +1,43 @@
-# spike_certify_fast.py
+# WITHDRAWN: spike_certify_fast.py
 
-Computational support for:
+This directory preserves the balanced-regime
+(R = 2) cycle-word search from an earlier version of *Spike structures*
+(`spike_certify_fast.py` and its output `spike_certify_fast_results.txt`).
 
-**"Spike Structures, Finite-State Exclusion, and Bounded-Exponent Collatz Cycles"**  
-Michael M. Ross, 2026
+**The result that search reported — "no R = 2 cycle for L ∈ [50, 200]" — is
+withdrawn.** Do not use this script, or cite its output, as evidence about
+Collatz cycles. It is withdrawn on three independent grounds, in increasing
+order of finality:
 
-*Zenodo Record:* [19039376](https://zenodo.org/records/19039376)
+1. **The enumeration was incomplete.** Candidate words were generated under
+   two structural restrictions — that the {1,2}-part consist of alternating
+   runs, and that no 1 → 2 adjacency occur. Both were consequences of the
+   "no 1 → 2 transition" claim of the first draft, which is false: the
+   transition a = 1 → a = 2 occurs precisely on x ≡ 11 (mod 16), a quarter
+   of the family D (see the correction remark in the current paper). The
+   search therefore omitted a large class of admissible words, and its
+   negative report cannot be concluded from it.
 
-## What it does
+2. **The regime it searched is empty for classical reasons.** For any
+   nontrivial cycle, multiplying 2^(a_i) = (3x_i + 1)/x_(i+1) around the
+   cycle gives 2^S = ∏(3 + 1/x_i) < (10/3)^L, so the average exponent
+   satisfies S/L < log2(10/3) ≈ 1.737 < 2. There was never an R = 2 regime
+   to search; the exclusion is a one-line consequence of the cycle
+   equation (see the average-exponent proposition in the current paper).
 
-Exhaustively searches for R=2 Collatz cycles — cycles whose average 2-adic division exponent equals 2 — across cycle lengths L ∈ [50, 200] with maximum division exponent bounded by Amax = 20.
+3. **The length range was already excluded unconditionally.** Cycles of
+   length L ≤ 200 — indeed of any length below roughly 10^10 odd terms —
+   are ruled out by known results (Hercher 2023, building on Simons–de
+   Weger and the computational verification bound), for every admissible
+   average exponent, not only R = 2.
 
-**Result:** No cycles found. This computationally verifies the predictions of Theorem 6 across 7.56 × 10⁹ candidate exponent sequences.
+The files are retained rather than deleted to keep the correction record
+legible, matching the versioned-correction practice of the paper itself:
+see the Version note and the Computational Status section of *Spike
+structures and 2-adic transition laws in the accelerated Collatz map*
+(https://doi.org/10.5281/zenodo.21049703).
+<!-- TODO: update to the DOI of the revised version once deposited. -->
 
-## Key concepts
-
-| Term | Meaning |
-|------|---------|
-| **L** | Cycle length — number of odd integers in the cycle |
-| **b** | Number of spike positions (exponents ≥ 3) in the sequence |
-| **n2** | Number of exponent-2 steps among the non-spike positions |
-| **candidate** | A (position, spike-value) combination tested by the sieve |
-
-For R=2 and b spikes, the total exponent sum is fixed at S = 2L, which uniquely determines n2 = L + b − big\_sum for each spike-value tuple. This eliminates the combinatorial explosion present in naive enumeration.
-
-Each value of L produces three output rows, one per b ∈ {1, 2, 3}. The b=1 row always shows 18 candidates — one for each valid spike value in [3, 20], independent of L.
-
-## Algorithm
-
-1. **Segment decomposition** — For fixed (L, n2), the cycle equation residue N mod 2³² factors as a matrix product `seg_matrix @ pow_matrix`, where rows index spike positions and columns index spike values. Computed once per (L, n2) bucket.
-
-2. **Vectorized prime sieve** — N ≡ 0 (mod p) is a necessary condition for a cycle. Applying primes 3, 5, 7, 11, 13, 17, 19 in sequence as vectorized matrix operations eliminates ~100% of candidates before any Python-level loop is entered.
-
-3. **Exact verification** — The rare survivors (none found in practice) are checked by solving the cycle equation exactly and confirming primitivity by iteration.
-
-## Requirements
-
-```
-Python >= 3.9
-numpy
-```
-
-## Usage
-
-```bash
-python spike_certify_fast.py
-```
-
-Parameters are set at the top of the file:
-
-| Parameter | Default | Meaning |
-|-----------|---------|---------|
-| `Lmin`, `Lmax` | 50, 200 | Cycle length range |
-| `Amax` | 20 | Maximum spike exponent |
-| `B_VALUES` | [1, 2, 3] | Spike counts to search |
-| `T_BITS` | 32 | Bit width for modular sieve |
-| `NWORKERS` | all cores | Parallel worker count |
-
-## Performance
-
-Full L ∈ [50, 200] range on an 8-core machine: approximately 22 minutes.
-Runtime scales roughly as O(L³) and linearly with available cores.
-
-## Output
-
-For each (L, b) pair:
-```
-L= 50 b=3  cands=6,759,648  t=0.49s  13,818,733/s  total=1s
-```
-
-A cycle found would be reported immediately with x₁, position tuple, and spike values. The final line confirms completion:
-```
-✅ DONE – no R=2 cycles found.
-Total candidates: 7,558,109,808  Time: 1344.4s
-```
-
-## Citation
-
-Michael M. Ross, "Spike Structures, Finite-State Exclusion, and
-Bounded-Exponent Collatz Cycles" *[journal/preprint details]*.
+The repository's current computational artifact is `residue_graph.py`
+(repository root), which reproduces the strongly connected-component
+computations reported in the current paper.
