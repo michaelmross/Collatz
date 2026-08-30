@@ -4,8 +4,8 @@ This directory preserves the balanced-regime
 (R = 2) cycle-word search from an earlier version of *Spike structures*
 (`spike_certify_fast.py` and its output `spike_certify_fast_results.txt`).
 
-**The result that search reported — "no R = 2 cycle for L ∈ [50, 200]" — is
-withdrawn.** Its results are invalid because:
+**The reported result — "no R = 2 cycle for L ∈ [50, 200]" — is
+withdrawn.** The result is invalid because:
 
 1. **The enumeration was incomplete.** Candidate words were generated under
    two structural restrictions — that the {1,2}-part consist of alternating
