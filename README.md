@@ -68,8 +68,7 @@ genuine cycle would use; see the paper.)
 - Earlier structural notes (2023), Figshare:
   https://doi.org/10.6084/m9.figshare.24778641 and
   https://doi.org/10.6084/m9.figshare.24778536
-- *A "perfect union" of the nth terms of convergence* (note, 1 December
-  2023), archival copy at Figshare:
+- *A "perfect union" of the nth terms of convergence* (Quora note, 2023), archival copy at Figshare:
   https://doi.org/10.6084/m9.figshare.33389983
 
 An interactive companion to `residue_graph.py` — the graph drawn in
