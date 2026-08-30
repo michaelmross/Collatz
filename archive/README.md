@@ -5,9 +5,7 @@ This directory preserves the balanced-regime
 (`spike_certify_fast.py` and its output `spike_certify_fast_results.txt`).
 
 **The result that search reported — "no R = 2 cycle for L ∈ [50, 200]" — is
-withdrawn.** Do not use this script, or cite its output, as evidence about
-Collatz cycles. It is withdrawn on three independent grounds, in increasing
-order of finality:
+withdrawn.** Its results are invalid because:
 
 1. **The enumeration was incomplete.** Candidate words were generated under
    two structural restrictions — that the {1,2}-part consist of alternating
