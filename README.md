@@ -9,7 +9,7 @@ Collatz map.
 |---|---|
 | `residue_graph.py` | Constructs the nondeterministic residue graph G(K,M) and reports its strongly connected components. The repository's primary computational artifact. |
 | `loops/` | Search code for the companion paper on Collatz-type maps 3x+n (cited there; do not relocate — the paper links this path). |
-| `archive/` | Superseded code retained for the record. **The result it reported is withdrawn** — see `archive/WITHDRAWN.md`. |
+| `archive/` | Superseded code retained for the record. **The result it reported is withdrawn** — see `archive/README.md`. |
 
 ## residue_graph.py
 
