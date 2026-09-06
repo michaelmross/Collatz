@@ -1,4 +1,4 @@
-# Collatz
+# Collatz Spikes and Loops
 
 Code supporting *Spike Structures and 2-adic Transition Laws in the Accelerated Collatz Map* and *Loop Structure of Collatz-Type Functions 3x+n: A Conjugacy Theorem and Powers of Three* (Ross, M. M., 2026).
 
