@@ -1,5 +1,7 @@
 # collatz_verify.py
 
+Code supporting [*Loop Structure of Collatz-Type Functions 3x+n: A Conjugacy Theorem and Powers of Three*](https://doi.org/10.5281/zenodo.19387418) (Ross, M. M., 2026)
+
 ## Overview
 
 This script studies the loop structure of Collatz-type functions `3x + n`
