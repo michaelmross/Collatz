@@ -56,21 +56,7 @@ recurrent, so acyclicity of any finite quotient cannot exclude cycles.
 (The deterministic variant that *is* acyclic omits the very edges a
 genuine cycle would use; see the paper.)
 
-## Papers and provenance
-
-- M. M. Ross, *Spike structures and 2-adic transition laws in the
-  accelerated Collatz map*, Zenodo.
-  https://doi.org/10.5281/zenodo.21049703
-  <!-- TODO: update to the DOI of the revised version once deposited,
-       or switch to the record's concept DOI. -->
-- M. M. Ross, *Loop structure of Collatz-type functions 3x+n: a conjugacy
-  theorem and powers of three*, Zenodo.
-  https://doi.org/10.5281/zenodo.20545164
-- Earlier structural notes (2023), Figshare:
-  https://doi.org/10.6084/m9.figshare.24778641 and
-  https://doi.org/10.6084/m9.figshare.24778536
-- *A "perfect union" of the nth terms of convergence* (Quora note, 2023), archival copy at Figshare:
-  https://doi.org/10.6084/m9.figshare.33389983
+##
 
 An interactive companion to `residue_graph.py` — the graph drawn in
 bit-reversed (2-adic) order, plus the exponent spike train — is at:
